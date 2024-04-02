@@ -8,14 +8,24 @@ body {
     font-family: 'Avenir Next', 'Hiragino Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    margin: 0;
 }
 .container {
     min-height: 600px;
     padding: 0 16px;
     margin: 0 auto;
+    background-color: black;
 }
 .blank-screen {
     height: 30vh;
+}
+.smoke-top {
+    background-color: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 60px;
 }
 /* ヘッダー ------------------------------- */
 header {
@@ -23,7 +33,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .header-color {
     background-color: rgba($color: white, $alpha: 0.0)
@@ -34,7 +46,7 @@ header {
 .logo {
     font-weight: 900;
     font-size: 24px;
-    padding-left: 14px;
+    padding-left: 16px;
 }
 .hamburger-menu {
     width: 50px;
@@ -43,7 +55,6 @@ header {
     border: none;
     background: transparent;
     appearance: none;
-    padding: 0;
     cursor: pointer;
 }
 .hamburger-menu_bar {
@@ -84,6 +95,8 @@ header {
     top: 50px;
     width: 100%;
     z-index: 9999;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .navigation_list {
     list-style: none;
@@ -112,4 +125,11 @@ header {
     font-size: 24px;
     font-weight: 900;
     text-align: center;
+}
+.huge {
+    font-size: 20vw;
+    font-weight: 900;
+}
+.cyan {
+    color: cyan;
 }
