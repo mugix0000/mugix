@@ -1,0 +1,115 @@
+/* 変数 ------------------------------- */
+$primary-color: #ffa35d;
+$font-color: #505050;
+
+/* 共通 ------------------------------- */
+body {
+    color: $font-color;
+    font-family: 'Avenir Next', 'Hiragino Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.container {
+    min-height: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.blank-screen {
+    height: 30vh;
+}
+/* ヘッダー ------------------------------- */
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-color {
+    background-color: rgba($color: white, $alpha: 0.0)
+}
+.header-color-open {
+    background-color: $primary-color;
+}
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    padding-left: 14px;
+}
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+}
+.hamburger-menu_bar {
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    background: $font-color;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.hamburger-menu_bar:first-child {
+    top: 16px;
+}
+.hamburger-menu_bar:nth-child(2) {
+    top: 24px;
+}
+.hamburger-menu_bar:last-child {
+    top: 32px;
+}
+.hamburger-menu-open .hamburger-menu_bar {
+    top: 50%;
+}
+.hamburger-menu-open .hamburger-menu_bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu-open .hamburger-menu_bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu-open .hamburger-menu_bar:nth-child(2) {
+    display: none;
+}
+.navigation {
+    display: none;
+    background: $primary-color;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 9999;
+}
+.navigation_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation_link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $font-color;
+    text-decoration: none;
+    display: block;
+    padding: 8px 24px;
+    transition: .5s;
+}
+/* メイン ------------------------------ */
+.pop {
+    width: 25%;
+    margin: 0 auto;
+}
+.pop-image {
+    width: 100%;
+    height: auto;
+}
+.pop-text {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}
