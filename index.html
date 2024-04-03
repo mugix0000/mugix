@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="custom.js"></script>
+  <script type="text/javascript" src="plugins/jquery.inview.min.js"></script>
 </head>
 <body>
   <header class="header-color">
@@ -25,18 +26,35 @@
       </ul>
     </nav>
   </header>
+  <!-- スモーク -->
   <div class="smoke-top"></div>
   <div class="smoke-bottom"></div>
+  <!-- コンテナ -->
   <div class="container">
-    <div class="blank-screen"></div>
-    <div class="pop">
-      <img src="images/mugi.png" class="pop-image">
-      <div class="pop-text">MUGIX</div>
+    <div class="area" id="white">
+      <div class="pop">
+        <img src="images/mugi.png" class="pop-image">
+      </div>
+      <div class="huge cyan inview fade-in-left">MUGIX<br>DESIGN</div>
     </div>
-    <div class="blank-screen"></div>
-    <div class="blank-screen"></div>
-    <div class="huge cyan">WEB</div>
-    <div class="huge cyan">DESIGN</div>
+    <div class="area" id="grey">
+      <img src="images/sun.png" class="sun">
+      <img src="images/angel.png" class="angel inview fade-in-right">
+      <img src="images/window.png" class="window left">
+      <img src="images/window.png" class="window right">
+    </div>
+    <div class="area" id="yellow">
+
+    </div>
+    <div class="area" id="green">
+
+    </div>
+    <div class="area" id="cyan">
+
+    </div>
+    <div class="area" id="blue">
+
+    </div>
   </div>
 
   <footer>
