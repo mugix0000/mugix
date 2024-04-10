@@ -22,6 +22,14 @@ $(function(){
     }
   });
 });
+$(function(){
+  $(".inview-appear").on("inview", function (event, isInView) {
+    if (isInView) {
+      $(this).stop().addClass("is-appear");
+    }
+  });
+});
+
 //背景色変更
 $(function(){
   function changeColor(color){
@@ -39,7 +47,7 @@ $(function(){
   });
   $("#green").on("inview", function (event, isInView) {
     if (isInView) {
-      changeColor("green")
+      changeColor("lightgreen")
     }
   });
   $("#cyan").on("inview", function (event, isInView) {
@@ -58,4 +66,18 @@ $(function(){
     }
   });
 });
-
+//クライマー
+var isScrolling = false;
+var id = false;
+$(window).on("scroll", function(){
+  if (!isScrolling) {
+    $(".climber").css("animation", "climbing 0.3s steps(2) infinite");
+    isScrolling = true;
+  }
+  if(id) clearTimeout(id);
+  id = setTimeout(function(){
+    $(".climber").css("animation", "none");
+    $(".climber").css("background-position", "-240px 0");
+    isScrolling = false;
+  }, 500);
+});

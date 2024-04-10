@@ -10,8 +10,12 @@
   <script type="text/javascript" src="plugins/jquery.inview.min.js"></script>
 </head>
 <body>
+  <!-- ヘッダー -->
   <header class="header-color">
-    <div class="logo">MUGIX</div>
+    <div class="logo">
+      <img src="images/mugi.svg" class="mugi">
+      MUGIX
+    </div>
     <button class="hamburger-menu" id="js-hamburger-menu">
       <span class="hamburger-menu_bar"></span>
       <span class="hamburger-menu_bar"></span>
@@ -31,30 +35,54 @@
   <div class="smoke-bottom"></div>
   <!-- コンテナ -->
   <div class="container">
-    <div class="area" id="white">
-      <div class="pop">
-        <img src="images/mugi.png" class="pop-image">
+    <!-- クライマー -->
+    <div class="rope">
+      <div class="climber-frame">
+        <div class="climber"></div>
       </div>
-      <div class="huge cyan inview fade-in-left">MUGIX<br>DESIGN</div>
     </div>
-    <div class="area" id="grey">
-      <img src="images/sun.png" class="sun">
+    <!-- トップ -->
+    <div class="area" id="white">
+    </div>
+    <!-- 天空 
+    <div class="area" id="white">
+      <img src="images/sun.svg" class="sun">
       <img src="images/angel.png" class="angel inview fade-in-right">
-      <img src="images/window.png" class="window left">
-      <img src="images/window.png" class="window right">
+      <img src="images/window.svg" class="window left">
+      <img src="images/window.svg" class="window right">
     </div>
+    <!-- 山 -->
     <div class="area" id="yellow">
-
+      <img src="images/sun.svg" class="sun inview-appear is-disappear">
+      <img src="images/mountains.svg" class="mountains">
+      <div class="bird-slider">
+        <img src="images/bird.svg" class="bird-1">
+        <img src="images/bird.svg" class="bird-2">
+        <img src="images/bird.svg" class="bird-3">
+      </div>
     </div>
+    <!-- 塔 -->
     <div class="area" id="green">
-
+      <img src="images/holy_tower.svg" class="tower">
+      <img src="images/flower-1.svg" class="flower-1">
+      <img src="images/flower-2.svg" class="flower-2">
+      <img src="images/flower-3.svg" class="flower-3">
     </div>
+    <!-- 海 -->
     <div class="area" id="cyan">
-
+      <img src="images/sunset-sea.svg" class="sea">
+      <img src="images/palm-tree.svg" class="palm">
+      <img src="images/cocktail.svg" class="cocktail">
     </div>
+    <!-- 海中 -->
+    <div class="area" id="blue">
+      <img src="images/undersea.svg" class="undersea">
+    </div>
+    <!-- 地中 -->
     <div class="area" id="blue">
 
     </div>
+
   </div>
 
   <footer>
