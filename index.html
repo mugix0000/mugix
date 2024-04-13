@@ -9,13 +9,10 @@
   <script src="custom.js"></script>
   <script type="text/javascript" src="plugins/jquery.inview.min.js"></script>
 </head>
-<body>
+<body class="media">
   <!-- ヘッダー -->
   <header class="header-color">
-    <div class="logo">
-      <img src="images/mugi.svg" class="mugi">
-      MUGIX
-    </div>
+    <div class="logo">MUGIX</div>
     <button class="hamburger-menu" id="js-hamburger-menu">
       <span class="hamburger-menu_bar"></span>
       <span class="hamburger-menu_bar"></span>
@@ -41,44 +38,64 @@
         <div class="climber"></div>
       </div>
     </div>
-    <!-- トップ -->
-    <div class="area" id="white">
+    <!-- メイン -->
+    <div class="area-top">
     </div>
-    <!-- 天空 
-    <div class="area" id="white">
-      <img src="images/sun.svg" class="sun">
-      <img src="images/angel.png" class="angel inview fade-in-right">
-      <img src="images/window.svg" class="window left">
-      <img src="images/window.svg" class="window right">
+    <div class="area" id="background-color-on">
+      <img src="images/mugix-title.svg" class="inview-appear is-disappear" style="width: 100%;">
     </div>
-    <!-- 山 -->
-    <div class="area" id="yellow">
-      <img src="images/sun.svg" class="sun inview-appear is-disappear">
-      <img src="images/mountains.svg" class="mountains">
+    <div class="area-horizon">
+      <div style="width: 60%;">
+        <img src="images/mugi-3.svg" class="shake" id="mugi-button">
+        <img src="images/push.svg" class="push">
+      </div>
+      <div class="mugi-selif" style="width: 40%;">大吉</div>
+    </div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 2;">いらっしゃいませ！<br>
+        ここはMUGIX DESIGNでございます<br><br>サイト制作の紹介やお問い合わせと同時に、実例の見本にもなっております<br>
+        お客様のプランのご参考にいかがでしょうか？<br>なお、クリックやタッチのできるところがいくつかございます<br>
+        どうぞごゆっくりお楽しみ下さい
+      </div>
+    </div>
+    <div class="area" style="margin-bottom: 24px;">
+      <img src="images/about-us.svg" class="inview-appear is-disappear" style="width: 80%; margin: 0 auto; display: block;">
+      <p style="text-align: center;" class="inview-appear is-disappear">〜ムギックスについて〜</p>
+    </div>
+    <div class="area">
+      <div style="display: flex; flex-direction: row;">
+        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto;">
+          ムギックス<br>&emsp;ウェブデザイナー<br>仕事<br>
+          &emsp;企業やお店のサイト制作<br>&emsp;オシャンティなサイト制作<br>&emsp;遊び心のあるサイト制作
+        </div>
+        <div class="area-vertical" style="width: 60%;">
+          <img src="images/garbera-4.svg" class="inview fade-in-right" style="width: 70%; animation: rotate-anim 9s linear infinite;">
+          <img src="images/garbera-6.svg" class="inview fade-in-right" style="width: 80%; margin-left: auto; animation: rotate-anim 12s linear infinite;">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row; margin-bottom: 24px;">
+        <div class="area-vertical" style="width: 60%;">
+          <img src="images/garbera-5.svg" class="inview fade-in-right" style="width: 65%; animation: rotate-anim 7s linear infinite;">
+          <img src="images/garbera-1.svg" class="inview fade-in-right" style="width: 90%; margin-left: auto; animation: rotate-anim 20s linear infinite;">
+        </div>
+        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto; padding: 16px;">
+          大切にしている事<br>&emsp;要らないサービスは省き、ハイスピードに適正な価格で提供する！<br>
+          &emsp;依頼者の作りたいサイトイメージを最大限叶える！<br>
+          &emsp;遊びごころを常に忘れない！
+        </div>
+      </div>
+    </div>
+    <div class="area-black">
+      <div class="box-1"></div>
+    </div>
+  <!--
       <div class="bird-slider">
         <img src="images/bird.svg" class="bird-1">
         <img src="images/bird.svg" class="bird-2">
         <img src="images/bird.svg" class="bird-3">
       </div>
     </div>
-    <!-- 塔 -->
-    <div class="area" id="green">
-      <img src="images/holy_tower.svg" class="tower">
-      <img src="images/flower-1.svg" class="flower-1">
-      <img src="images/flower-2.svg" class="flower-2">
-      <img src="images/flower-3.svg" class="flower-3">
-    </div>
-    <!-- 海 -->
-    <div class="area" id="cyan">
-      <img src="images/sunset-sea.svg" class="sea">
-      <img src="images/palm-tree.svg" class="palm">
-      <img src="images/cocktail.svg" class="cocktail">
-    </div>
-    <!-- 海中 -->
-    <div class="area" id="blue">
-      <img src="images/undersea.svg" class="undersea">
-    </div>
-    <!-- 地中 -->
+  -->
     <div class="area" id="blue">
 
     </div>

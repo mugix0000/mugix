@@ -1,21 +1,37 @@
 /* 変数 ------------------------------- */
-$primary-color: #ffa35d;
-$font-color: #505050;
+$base-color: #b9d9c3;
+$primary-color: #eb5e30;
+$secondary-color: rgb(251, 203, 123);
+$tertialy-color: rgb(117, 42, 7);
+$font-color: rgb(38, 47, 52);
 
 /* 共通 ------------------------------- */
+.media {
+    font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+    .media {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .media {
+        font-size: 20px;
+    }
+}
 body {
     color: $font-color;
     font-family: 'Avenir Next', 'Hiragino Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0;
+    font-weight: 600;
     transition: 2s;
     position: relative;
+    background-color: $base-color;
+    margin: 0;
 }
 .container {
     margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
+    width: 98%;
+    max-width: 1024px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,7 +43,7 @@ body {
     top: 0;
     z-index: 50;
     width: 100%;
-    height: 60px;
+    height: 80px;
 }
 .smoke-bottom {
     background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
@@ -35,13 +51,13 @@ body {
     bottom: 0;
     z-index: 50;
     width: 100%;
-    height: 60px;
+    height: 80px;
 }
 .rope {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 20%;
+    right: 15%;
     width: 8px;
     border: 1.5px solid black;
     background: linear-gradient(to right, rgb(192, 169, 124) 0%, rgb(210, 184, 134) 40%, rgb(146, 127, 90) 100%);
@@ -83,7 +99,7 @@ header {
     background-color: rgba($color: white, $alpha: 0.0)
 }
 .header-color-open {
-    background-color: $primary-color;
+    background-color: $secondary-color;
 }
 .logo {
     font-weight: 900;
@@ -92,10 +108,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    .mugi {
-        height: 50px;
-        padding-right: 10px;
-    }
 }
 .hamburger-menu {
     width: 50px;
@@ -139,7 +151,7 @@ header {
 }
 .navigation {
     display: none;
-    background: $primary-color;
+    background: $secondary-color;
     position: absolute;
     top: 50px;
     width: 100%;
@@ -165,63 +177,70 @@ header {
 .area-top {
     width: 100%;
     height: 100vh;
-    position: relative;
     margin-bottom: 8px;
 }
 .area {
     width: 100%;
-    padding-top: 250%;
+    position: relative;
+}
+.area-horizon {
+    width: 100%;
     position: relative;
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
 }
-.pop {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25%;
-}
-.pop-image {
+.area-vertical {
     width: 100%;
-    height: auto;
+    position: relative;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
 }
-.sun {
-    width: 100%;
+.text-box {
+    background-color: white;
+    padding: 8px;
+    border: 3px solid $font-color;
+    border-radius: 12px;
+    z-index: 50;
+}
+.push {
     position: absolute;
-    top: -20%;
-    left: -30%;
+    width: 15%;
+    transform: rotate(-10deg);
+    bottom: 0;
+    left: 5%;
 }
-.window {
+.mugi-selif {
+    background-image: url("images/selif.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 30% 0;
+    padding-bottom: 5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    font-size: 2em;
+    font-weight: 800;
+}
+.pop-about-us {
+    margin: 0 auto;
     width: 60%;
-    opacity: 0.5;
-    height: auto;
-    position: absolute;
-    &.left {
-        top: 20%;
-    }
-    &.right {
-        top: 50%;
-        right: 5%;
-    }
-}
-.angel {
-    position: absolute;
-    width: 90%;
-    top: 20%;
-    right: -5%;
-    rotate: 10deg;
-}
-.mountains {
-    position: absolute;
-    width: 200%;
-    top: 0%;
-    left: -50%;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    height: 50px;
+    background-color: rgb(66, 206, 138);
+} 
+.area-black {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 8px;
+    background-color: black;
 }
 .bird-slider {
     position: absolute;
-    width: 100%;
-    height: 30%;
+    width: 120%;
+    height: 50%;
     top: 30%;
     left: -100%;
     animation: birds 10s linear infinite;
@@ -236,7 +255,7 @@ header {
     left:  10%;
 }
 .bird-2 {
-    width: 60%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left:  50%;
@@ -250,54 +269,11 @@ header {
     z-index: 20;
 }
 .tower {
-    width: 130%;
     position: absolute;
-    top: -20%;
-    left: -45%;
-}
-.flower-1 {
-    width: 60%;
-    position: absolute;
-    top: 60%;
-    left: -10%;
-}
-.flower-2 {
-    width: 70%;
-    position: absolute;
-    top: 70%;
-    left: 10%;
-}
-.flower-3 {
-    width: 50%;
-    position: absolute;
-    top: 70%;
-    left: 60%;
-}
-.sea {
-    position: absolute;
-    width: 150%;
-    top: 40%;
-    left: -50%;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-}
-.palm {
-    position: absolute;
-    width: 200%;
-    top: 20%;
-    left: -110%;
-}
-.cocktail {
-    position: absolute;
-    width: 150%;
-    top: 60%;
-    left: -50%;
-}
-.undersea {
-    position: absolute;
-    width: 150%;
-    top: 30%;
-    left: -50%;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    height: 80%;
+    bottom: 30%;
+    right: 20%;
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
 .huge {
     font-size: 20vw;
@@ -321,6 +297,11 @@ header {
     transform: translate(50%, 0);
     transition: 2s;
 }
+.fade-in-bottom {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2s;
+}
 .is-show {
     transform: translate(0, 0);
     opacity: 1;
@@ -331,6 +312,18 @@ header {
 }
 .is-appear {
     transform: scale(1);
+}
+.shake {
+    transform: rotate(10deg);
+    animation: shake-anim 3s linear infinite;
+}
+@keyframes shake-anim {
+    0% { transform: rotate(10deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(10deg); }
 }
 .rotate {
     animation: rotate-anim 5s linear infinite;

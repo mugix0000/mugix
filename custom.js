@@ -12,16 +12,15 @@ $(function () {
       }
     });
 });
-//横からスライド
+//スライド
 $(function(){
   $(".inview").on("inview", function (event, isInView) {
     if (isInView) {
       $(this).stop().addClass("is-show");
-    } else {
-      $(this).stop().removeClass("is-show")
     }
   });
 });
+//出現
 $(function(){
   $(".inview-appear").on("inview", function (event, isInView) {
     if (isInView) {
@@ -29,40 +28,35 @@ $(function(){
     }
   });
 });
-
-//背景色変更
+var omikujiOn = false;
+//むぎのセリフ
 $(function(){
-  function changeColor(color){
-    $("body").stop().css("background-color", color);
+  $("#mugi-button").on("click", function () {
+    if (omikujiOn) return;
+    omikujiOn = true;
+    var randomInt = Math.floor(Math.random() * 11);
+    var omikuji = "吉";
+    if (randomInt == 0) {
+      omikuji = "大吉★";
+    }else if (randomInt >= 1 && randomInt < 4) {
+      omikuji = "中吉！";
+    }else if (randomInt == 9) {
+      omikuji = "凶(x_x)";
+    }
+    $(".mugi-selif").text(omikuji);
+    $(".mugi-selif").css("display", "flex");
+  });
+});
+//背景色変更
+$(window).scroll(function(){
+  if ($(this).scrollTop() < 200) {
+    $("body").stop().css("background-color", "white");
   }
-  $("#white").on("inview", function (event, isInView) {
+});
+$(function(){
+  $("#background-color-on").on("inview", function (event, isInView) {
     if (isInView) {
-      changeColor("white")
-    }
-  });
-  $("#yellow").on("inview", function (event, isInView) {
-    if (isInView) {
-      changeColor("yellow")
-    }
-  });
-  $("#green").on("inview", function (event, isInView) {
-    if (isInView) {
-      changeColor("lightgreen")
-    }
-  });
-  $("#cyan").on("inview", function (event, isInView) {
-    if (isInView) {
-      changeColor("cyan")
-    }
-  });
-  $("#blue").on("inview", function (event, isInView) {
-    if (isInView) {
-      changeColor("blue")
-    }
-  });
-  $("#grey").on("inview", function (event, isInView) {
-    if (isInView) {
-      changeColor("lightgrey")
+      $("body").stop().css("background-color", "#b9d9c3");
     }
   });
 });
