@@ -3,7 +3,8 @@ $base-color: #b9d9c3;
 $primary-color: #eb5e30;
 $secondary-color: rgb(251, 203, 123);
 $tertialy-color: rgb(117, 42, 7);
-$font-color: rgb(38, 47, 52);
+$font-color: #48575e;
+$font-subcolor: green;
 
 /* 共通 ------------------------------- */
 .media {
@@ -182,6 +183,7 @@ header {
 .area {
     width: 100%;
     position: relative;
+    margin-bottom: 8px;
 }
 .area-horizon {
     width: 100%;
@@ -202,6 +204,7 @@ header {
     padding: 8px;
     border: 3px solid $font-color;
     border-radius: 12px;
+    position: relative;
     z-index: 50;
 }
 .push {
@@ -225,17 +228,25 @@ header {
     font-size: 2em;
     font-weight: 800;
 }
-.pop-about-us {
-    margin: 0 auto;
-    width: 60%;
-    height: 50px;
-    background-color: rgb(66, 206, 138);
-} 
-.area-black {
+.pop-sub {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: $primary-color;
+    -webkit-text-stroke: 2px $font-color;
+}
+.plan-slider {
     width: 100%;
-    height: 400px;
-    margin-bottom: 8px;
-    background-color: black;
+    margin: 16px auto 64px auto;
+    height: 80vh;
+    z-index: 40;
+}
+.plan {
+    width: 80%;
+    height: 80vh;
+    margin: 0 8px;
+    background-color: rgb(255, 251, 215);
+    border-radius: 24px;
 }
 .bird-slider {
     position: absolute;
@@ -267,24 +278,6 @@ header {
     top: 50%;
     left:  30%;
     z-index: 20;
-}
-.tower {
-    position: absolute;
-    height: 80%;
-    bottom: 30%;
-    right: 20%;
-    mask-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-}
-.huge {
-    font-size: 20vw;
-    font-weight: 900;
-    position: absolute;
-    bottom: 10%;
-    line-height: 1;
-    z-index: 30;
-}
-.cyan {
-    color: cyan;
 }
 /* jquery ---------------------------------- */
 .fade-in-left {

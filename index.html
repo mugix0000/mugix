@@ -4,15 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mugix</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!--
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <!--
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="custom.js"></script>
-  <script type="text/javascript" src="plugins/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  -->
 </head>
 <body class="media">
   <!-- ヘッダー -->
   <header class="header-color">
-    <div class="logo">MUGIX</div>
+    <div class="logo">MUGIX DESIGN</div>
     <button class="hamburger-menu" id="js-hamburger-menu">
       <span class="hamburger-menu_bar"></span>
       <span class="hamburger-menu_bar"></span>
@@ -38,7 +47,7 @@
         <div class="climber"></div>
       </div>
     </div>
-    <!-- メイン -->
+    <!-- main -->
     <div class="area-top">
     </div>
     <div class="area" id="background-color-on">
@@ -58,7 +67,8 @@
         どうぞごゆっくりお楽しみ下さい
       </div>
     </div>
-    <div class="area" style="margin-bottom: 24px;">
+    <!-- about_us -->
+    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <img src="images/about-us.svg" class="inview-appear is-disappear" style="width: 80%; margin: 0 auto; display: block;">
       <p style="text-align: center;" class="inview-appear is-disappear">〜ムギックスについて〜</p>
     </div>
@@ -69,24 +79,139 @@
           &emsp;企業やお店のサイト制作<br>&emsp;オシャンティなサイト制作<br>&emsp;遊び心のあるサイト制作
         </div>
         <div class="area-vertical" style="width: 60%;">
-          <img src="images/garbera-4.svg" class="inview fade-in-right" style="width: 70%; animation: rotate-anim 9s linear infinite;">
+          <img src="images/garbera-4.svg" class="inview fade-in-right" style="width: 70%; animation: rotate-anim 18s linear infinite;">
           <img src="images/garbera-6.svg" class="inview fade-in-right" style="width: 80%; margin-left: auto; animation: rotate-anim 12s linear infinite;">
         </div>
       </div>
       <div style="display: flex; flex-direction: row; margin-bottom: 24px;">
         <div class="area-vertical" style="width: 60%;">
-          <img src="images/garbera-5.svg" class="inview fade-in-right" style="width: 65%; animation: rotate-anim 7s linear infinite;">
-          <img src="images/garbera-1.svg" class="inview fade-in-right" style="width: 90%; margin-left: auto; animation: rotate-anim 20s linear infinite;">
+          <img src="images/garbera-5.svg" class="inview fade-in-left" style="width: 65%; animation: rotate-anim 9s linear infinite;">
+          <img src="images/garbera-1.svg" class="inview fade-in-left" style="width: 90%; margin-left: auto; animation: rotate-anim 20s linear infinite;">
         </div>
-        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto; padding: 16px;">
-          大切にしている事<br>&emsp;要らないサービスは省き、ハイスピードに適正な価格で提供する！<br>
-          &emsp;依頼者の作りたいサイトイメージを最大限叶える！<br>
-          &emsp;遊びごころを常に忘れない！
+        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto; padding: 12px 16px 12px 10px; font-size: 1.8em;">
+          <div class="text-box inview fade-in-bottom" style="position: absolute; right: -30px; font-size: 0.5em;">
+            コンセプト
+          </div>
+          速い、安い、上手い
         </div>
       </div>
     </div>
-    <div class="area-black">
-      <div class="box-1"></div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 2;">いらっしゃいませ！<br>
+        ここはMUGIX DESIGNでございます<br><br>サイト制作の紹介やお問い合わせと同時に、実例の見本にもなっております<br>
+        お客様のプランのご参考にいかがでしょうか？<br>なお、クリックやタッチのできるところがいくつかございます<br>
+        どうぞごゆっくりお楽しみ下さい
+      </div>
+    </div>
+    <video style="width: 90%; margin: 16px 5%;border-radius: 16px; border: 5px double black;" autoplay loop>
+      <source src="movies/footprint.mp4" type="video/mp4">
+    </video>
+    <!-- workflow -->
+    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+      <img src="images/workflow.svg" class="inview-appear is-disappear" style="width: 80%; margin: 0 auto; display: block;">
+      <p style="text-align: center;" class="inview-appear is-disappear">〜完成までの流れ〜</p>
+    </div>
+    <!-- meeting -->
+    <div style="margin-bottom: 32px;" class="inview-appear is-disappear">
+      <div class="pop-sub">Meeting</div>
+    </div>
+    <div class="area-vertical" style="margin-bottom: 64px;">
+      <div class="area">
+        <div class="inview fade-in-left" style="background-color: blue; width: 50%; height: 200px; margin-left: auto;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-right"style="width: 60%;">
+          お問い合わせのメールを送って頂いた後はまずは打ち合わせの日程を決めましょう<br>時間さえ合えば、その日でも大丈夫です
+        </div>
+      </div>
+      <div class="area">
+        <div class="inview fade-in-left" style="background-color: blue; width: 40%; height: 100px; margin-left: 20%;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-right" style="width: 60%; margin-left: 10%;">
+          打ち合わせの基本スタイルは、電話や通信アプリで会話しながら、iPhoneのフリーボードアプリかgoogleのジャムボードアプリで
+          一緒に完成イメージを作っていきます<br>
+        </div>
+      </div>
+      <div class="area">
+        <div class="inview fade-in-right" style="background-color: blue; width: 70%; height: 80px;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-left" style="width: 80%; margin-left: auto;">
+          作りたいサイトのイメージが固まってなくても大丈夫です！アイデアのお手伝いをしますので一緒に完成イメージを作りましょう<br><br>
+          またサイトに載せる画像は用意していただきますが、画像が無いなどの場合はお気軽にご相談ください
+        </div>
+      </div>
+    </div>
+    <!-- create -->
+    <div style="margin-bottom: 32px;" class="inview-appear is-disappear">
+      <div class="pop-sub">Create</div>
+    </div>
+    <div class="area-vertical" style="margin-bottom: 64px;">
+      <div class="area">
+        <div class="text-box inview fade-in-right"style="width: 70%;">
+          打ち合わせで完成のイメージができたので、早速ウェブページ制作に取り掛かります<br>
+          サイトの規模にもよりますが、だいたい１週間で完成します<br>
+          テンプレートを使ったページだともっと早くて２〜３日で完成します<br>
+        </div>
+      </div>
+      <div class="area">
+        <div class="inview fade-in-left" style="background-color: blue; width: 60%; height: 200px; margin-left: 20%;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-left" style="width: 60%; margin-left: auto;">
+          完成した仮のサイトを見ながら、再度打ち合わせをします<br>
+          ここで修正する箇所や、サイトに載せる画像を調整していきます<br>
+        </div>
+      </div>
+      <div class="area">
+        <div class="inview fade-in-left" style="background-color: blue; width: 50%; height: 200px; margin-left: auto;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-right" style="width: 60%;">
+          修正ポイントを直します<br>
+          なるべくはその日、その場で修正しますが、修正箇所によっては後日改めて、となることもあります<br>
+          修正後は再度打ち合わせをします<br><br>
+          基本的に修正回数は２回までとなります
+        </div>
+      </div>
+    </div>
+    <!-- completed -->
+    <div style="margin-bottom: 32px;" class="inview-appear is-disappear">
+      <div class="pop-sub">Completed</div>
+    </div>
+    <div class="area-vertical" style="margin-bottom: 64px;">
+      <div class="area">
+        <div class="inview fade-in-left" style="background-color: blue; width: 70%; height: 200px; margin-left: auto;"></div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-right"style="width: 60%;">
+          出来上がったサイトをサーバー上にアップして公開します<br>
+          ドメインの設定やメールアドレスの設定などもここで行います
+        </div>
+      </div>
+      <div class="area">
+        <div class="text-box inview fade-in-left" style="width: 80%; margin-left: auto;">
+          アクセス解析の方法、CMSの場合は記事やニュースの更新方法などサイトの使い方、運用方法もここでレクチャーします
+        </div>
+      </div>
+      <div class="area">
+        <div class="inview fade-in-right" style="background-color: blue; width: 100%; height: 100px;"></div>
+      </div>
+    </div>
+    <!-- prices -->
+    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+      <img src="images/about-us.svg" class="inview-appear is-disappear" style="width: 80%; margin: 0 auto; display: block;">
+      <p style="text-align: center;" class="inview-appear is-disappear">〜メニュー〜</p>
+    </div>
+    <div class="plan-slider">
+      <div class="plan">a</div>
+      <div class="plan">b</div>
+      <div class="plan">c</div>
+    </div>
+    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+      <img src="images/about-us.svg" class="inview-appear is-disappear" style="width: 80%; margin: 0 auto; display: block;">
+      <p style="text-align: center;" class="inview-appear is-disappear">〜メニュー〜</p>
     </div>
   <!--
       <div class="bird-slider">
@@ -96,14 +221,15 @@
       </div>
     </div>
   -->
-    <div class="area" id="blue">
-
-    </div>
-
   </div>
 
   <footer>
 
   </footer>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
