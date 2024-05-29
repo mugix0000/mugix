@@ -1,7 +1,8 @@
 /* 変数 ------------------------------- */
 $base-color: #b9d9c3;
+$bg-color: #84fff9;
 $primary-color: #eb5e30;
-$secondary-color: rgb(251, 203, 123);
+$secondary-color: #fbcb7b;
 $tertialy-color: rgb(117, 42, 7);
 $font-color: #48575e;
 $font-subcolor: green;
@@ -26,7 +27,6 @@ body {
     font-weight: 600;
     transition: 2s;
     position: relative;
-    background-color: $base-color;
     margin: 0;
 }
 .container {
@@ -85,6 +85,13 @@ body {
 @keyframes climbing {
     0% { background-position: 0 0; }
     100% { background-position: -240px 0; }
+}
+.button {
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+    padding: 6px 18px;
+    border-radius: 20px;
 }
 /* ヘッダー ------------------------------- */
 header {
@@ -175,6 +182,13 @@ header {
     transition: .5s;
 }
 /* メイン ------------------------------ */
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bg-water.svg");
+    background-size: cover;
+}
 .area-top {
     width: 100%;
     height: 100vh;
@@ -225,32 +239,38 @@ header {
 }
 .push {
     position: absolute;
-    width: 15%;
+    width: 10%;
     transform: rotate(-10deg);
     bottom: 0;
-    left: 5%;
+    left: 0%;
 }
 .mugi-selif {
     background-image: url("../images/selif.svg");
-    background-size: contain;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 0 30% 0;
-    padding-bottom: 5%;
+    padding: 3% 10% 6% 10%;
+    height: 40%;
     display: none;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     z-index: 50;
     font-size: 2em;
     font-weight: 800;
 }
 .palette {
     position: absolute;
-    bottom: -10%;
-    left: -35%;
+    bottom: 0;
+    left: -150px;
     border-radius: 50%;
-    width: 70%;
-    height: 70%;
+    width: 300px;
+    aspect-ratio: 1 / 1;
+}
+.palette-re {
+    position: absolute;
+    bottom: -150px;
+    left: -300px;
+    width: 600px;
+    aspect-ratio: 1 / 1;
 }
 .bg-button {
     width: 25%;
@@ -261,6 +281,10 @@ header {
     top: 50%;
     left: 50%;
     border: 3px solid $font-color;
+    &:active {
+        width: 30%;
+        height: 30%;
+    }
 }
 .game-frame {
     width: 50%;
@@ -291,10 +315,23 @@ header {
 }
 .plan {
     width: 80%;
-    height: 80vh;
+    height: 70vh;
     margin: 0 8px;
-    background-color: rgb(255, 251, 215);
+    background-color: $secondary-color;
     border-radius: 24px;
+    border: 3px solid $font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.plan-top {
+    margin: 0 auto;
+    height: 30%;
+}
+.plan-title {
+    height: 10%;
+    text-align: center;
+    font-size: 10vw;
 }
 .bird-slider {
     position: absolute;

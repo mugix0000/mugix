@@ -19,6 +19,7 @@
   -->
 </head>
 <body class="media">
+  <div class="bg"></div>
   <!-- header -->
   <header class="header-color">
     <div class="logo">MUGIX DESIGN</div>
@@ -54,36 +55,40 @@
       <img src="images/wani.svg" class="inview-wani" style="width: 50%; position: absolute; top: -30px;">
       <img src="images/kirin.svg" class="inview-kirin" style="width: 40%; position: absolute; bottom: -20%; left: -50%;">
     </div>
-    <div class="area-horizon">
-      <div style="width: 60%;">
+    <div class="area" style="margin-bottom: 4px;">
+      <h1 class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 1.8; font-size: 1.2em;">いらっしゃいませ！<br>
+        ここはMUGIX DESIGNでございます<br><br>ホームページ制作はお任せください！<br>
+      </h1>
+    </div>
+    <div class="area-horizon" style="margin-left: 10%;"">
+      <div style="width: 30%;">
         <img src="images/mugi-3.svg" class="shake" id="mugi-button">
         <img src="images/push.svg" class="push">
       </div>
-      <div class="mugi-selif" style="width: 40%;"></div>
+      <div class="mugi-selif" style="width: 30%;"></div>
     </div>
-    <div class="area" id="background-color-on" style="margin-bottom: 32px;">
-      <img src="images/logo-moji.svg" style="width: 50%; float: right; margin-right: 10%;">
-      <div class="palette" style="animation: rotate-anim 20s linear infinite;">
-        <button class="bg-button" style="background-color: red; transform: translate(-50%, 80%);"></button>
-        <button class="bg-button" style="background-color: blue; transform: translate(-50%, -180%);"></button>
-        <button class="bg-button" style="background-color: green; transform: translate(60%, 15%);"></button>
-        <button class="bg-button" style="background-color: yellow; transform: translate(60%, -115%);"></button>
-        <button class="bg-button" style="background-color: yellow; transform: translate(-160%, -115%);"></button>
-        <button class="bg-button" style="background-color: green; transform: translate(-160%, 15%);"></button>
-      </div>
-    </div>
-    <div class="area-orange" style="margin-bottom: 48px;">
-      <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 1.8; color: white;">いらっしゃいませ！<br>
-        ここはMUGIX DESIGNでございます<br><br>サイト制作の紹介やお問い合わせと同時に、実例の見本にもなっております<br>
+    <div class="area" id="background-color-on" style="margin-bottom: 160px; height: 600px;">
+      <h1 class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 1.8; font-size: 1.2em;">
+        このサイトは制作の紹介やお問い合わせと同時に、実例の見本にもなっております<br>
         お客様のプランのご参考にいかがでしょうか？<br>なお、クリックのできるところがいくつかございます<br>
         どうぞごゆっくりお楽しみ下さい
+        <div style="text-align: right; margin-top: 8px;"><a href="#" class="button">問い合わせ</a></div>
+      </h1>
+      <img src="images/bg-title.svg" class="palette-re" style="animation: rotate-anim 15s linear infinite reverse;">
+      <div class="palette" style="animation: rotate-anim 20s linear infinite;">
+        <button id="bg-1" class="bg-button" style="background-image: url('images/bg-water.svg'); transform: translate(-50%, 80%);"></button>
+        <button id="bg-2" class="bg-button" style="background-image: url('images/bg-green.svg'); transform: translate(-50%, -180%);"></button>
+        <button id="bg-3" class="bg-button" style="background-image: url('images/bg-pink.svg'); transform: translate(60%, 15%);"></button>
+        <button id="bg-4" class="bg-button" style="background-image: url('images/bg-blue.svg'); transform: translate(60%, -115%);"></button>
+        <button id="bg-5" class="bg-button" style="background-image: url('images/bg-salmon.svg'); transform: translate(-160%, -115%);"></button>
+        <button id="bg-6" class="bg-button" style="background-image: url('images/bg-yellow.svg'); transform: translate(-160%, 15%);"></button>
       </div>
-      <img src="images/ink.svg" class="inview-appear is-disappear" style="width: 40%; max-width: 300px; position: absolute; bottom: -20%; right: 0;">
+      <img src="images/ink.svg" class="inview-appear is-disappear" style="width: 40%; max-width: 300px; position: absolute; bottom: -30%; right: 0;">
     </div>
     <!-- about_us -->
     <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <img src="images/about-us.svg" class="is-disappear subtitle" id="about-us">
-      <img src="images/rakko.svg" class="inview-rakko" style="width: 50%; position: absolute; top: -70px; left: -50%;">
+      <img src="images/rakko.svg" class="inview-rakko" style="width: 50%; position: absolute; top: -90px; left: -50%;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜ムギックスについて〜</p>
     </div>
     <img src="images/bee.svg" id="bee" style="width: 25%; position: absolute; z-index: 10;">
@@ -103,20 +108,20 @@
           <img src="images/flower-b.svg" id="flower3" class="inview fade-in-left" style="width: 65%; animation: rotate-anim 9s linear infinite;">
           <img src="images/flower-y.svg" id="flower4" class="inview fade-in-left" style="width: 90%; margin-left: auto; animation: rotate-anim 20s linear infinite;">
         </div>
-        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto; padding: 12px 16px 12px 10px; font-size: 1.8em;">
-          <div class="text-box inview fade-in-bottom" style="position: absolute; right: -30px; font-size: 0.5em;">
+        <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto; padding: 12px 16px 12px 10px; font-size: 1.4em;">
+          <div class="text-box inview fade-in-bottom" style="position: absolute; right: -35px; font-size: 0.8em;">
             コンセプト
           </div>
-          速い、安い、ウマい
+          オシャレなサイトを低価格でスピーディーに！
         </div>
       </div>
     </div>
     <div class="area" style="margin-bottom: 48px;">
-      <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 2;">ホームページを作った事はありますか？<br>
+      <h1 class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 1.8; font-size: 1.2em;">ホームページを作った事はありますか？<br>
         今やホームページを作ることは難しいことではありません<br><br>HTMLやCSSを触らなくても簡単に作るツールはたくさんありますし、SEOやSSLもほとんどセットで簡単に導入できます<br><br>
         しかしツールを使うにも初めてだと時間や手間はかかってしまいますし<br>サイトを作ってるうちに『もっとオシャレにしたい』などの気持ちになることもあります<br><br>
         そんな時はお任せ下さい！<br>シンプルで見やすいホームページでもオシャレなホームページでも皆さんのご要望を叶えます<br>
-      </div>
+      </h1>
     </div>
     <div style="margin-left: 5%;">ムービー</div>
     <video style="width: 90%; margin: 16px 5%; border-radius: 16px; border: 5px double black;" autoplay loop>
@@ -131,7 +136,7 @@
         <div class="game-frame"><div class="game-button" id="ann-game4"></div></div>
       </div>
       <div style="position: relative; width: 50%;">
-        <img src="images/nice-anchan.svg" id="annchan" style="width: 100%; position: absolute; bottom: -30%; right: -120%; transition: 1s;">
+        <img src="images/nice-anchan.svg" id="annchan" style="width: 100%; max-width: 300px; position: absolute; bottom: -20%; right: -120%; transition: 1s;">
       </div>
     </div>
     <!-- workflow -->
@@ -236,7 +241,11 @@
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜メニュー〜</p>
     </div>
     <div class="plan-slider">
-      <div class="plan">a</div>
+      <div class="plan">
+        <img src="images/mugi-3.svg" class="plan-top">
+        <div class="plan-title">シンプルHP</div>
+        <div class="plan-title">¥30000</div>
+      </div>
       <div class="plan">b</div>
       <div class="plan">c</div>
     </div>
@@ -247,6 +256,7 @@
     <div class="area" style="margin-bottom: 48px;">
       <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
         お問い合わせはLINEのMUGIX公式アカウントからメッセージを送って下さい<br>
+        お知らせや告知などの不必要なメッセージは送りませんので<br>
         お見積もりや質問など、お気軽にご相談ください<br><br>
         以下のQRコードを読み込むか<br>スマートフォンだと「友だち追加」ボタンからでも追加できます
       </div>

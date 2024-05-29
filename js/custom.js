@@ -63,15 +63,24 @@ $(function(){
       omikuji = "凶(x_x)";
     }
     $(".mugi-selif").text(omikuji);
-    $(".mugi-selif").css("display", "flex");
+    $(".mugi-selif").css("display", "block");
   });
 });
-//背景色変更
+//背景変更
+var bgIDs = ["bg-1", "bg-2", "bg-3", "bg-4", "bg-5", "bg-6"];
+var bgImages = ['url("images/bg-water.svg")', 'url("images/bg-green.svg")', 'url("images/bg-pink.svg")', 'url("images/bg-blue.svg")', 'url("images/bg-salmon.svg")', 'url("images/bg-yellow.svg")'];
+$(function(){
+  $(".bg-button").on("click", function(){
+    var index = bgIDs.indexOf($(this).attr("id"));
+    $(".bg").stop().css("background-image", bgImages[index]);
+  });
+});
 $(window).scroll(function(){
   if ($(this).scrollTop() < 200) {
-    $("body").stop().css("background-color", "white");
+    
   }
 });
+/*
 $(function(){
   $("#background-color-on").on("inview", function (event, isInView) {
     if (isInView) {
@@ -79,6 +88,7 @@ $(function(){
     }
   });
 });
+*/
 //クライマー
 var isScrolling = false;
 var id = false;

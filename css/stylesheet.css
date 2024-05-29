@@ -21,7 +21,6 @@ body {
   font-weight: 600;
   transition: 2s;
   position: relative;
-  background-color: #b9d9c3;
   margin: 0;
 }
 
@@ -92,6 +91,14 @@ body {
     background-position: -240px 0;
   }
 }
+.button {
+  background-color: #eb5e30;
+  color: white;
+  text-decoration: none;
+  padding: 6px 18px;
+  border-radius: 20px;
+}
+
 /* ヘッダー ------------------------------- */
 header {
   height: 50px;
@@ -108,7 +115,7 @@ header {
 }
 
 .header-color-open {
-  background-color: rgb(251, 203, 123);
+  background-color: #fbcb7b;
 }
 
 .logo {
@@ -173,7 +180,7 @@ header {
 
 .navigation {
   display: none;
-  background: rgb(251, 203, 123);
+  background: #fbcb7b;
   position: absolute;
   top: 50px;
   width: 100%;
@@ -199,6 +206,14 @@ header {
 }
 
 /* メイン ------------------------------ */
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bg-water.svg");
+  background-size: cover;
+}
+
 .area-top {
   width: 100%;
   height: 100vh;
@@ -256,22 +271,21 @@ header {
 
 .push {
   position: absolute;
-  width: 15%;
+  width: 10%;
   transform: rotate(-10deg);
   bottom: 0;
-  left: 5%;
+  left: 0%;
 }
 
 .mugi-selif {
   background-image: url("../images/selif.svg");
-  background-size: contain;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 0 30% 0;
-  padding-bottom: 5%;
+  padding: 3% 10% 6% 10%;
+  height: 40%;
   display: none;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   z-index: 50;
   font-size: 2em;
   font-weight: 800;
@@ -279,11 +293,19 @@ header {
 
 .palette {
   position: absolute;
-  bottom: -10%;
-  left: -35%;
+  bottom: 0;
+  left: -150px;
   border-radius: 50%;
-  width: 70%;
-  height: 70%;
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+
+.palette-re {
+  position: absolute;
+  bottom: -150px;
+  left: -300px;
+  width: 600px;
+  aspect-ratio: 1/1;
 }
 
 .bg-button {
@@ -295,6 +317,10 @@ header {
   top: 50%;
   left: 50%;
   border: 3px solid #48575e;
+}
+.bg-button:active {
+  width: 30%;
+  height: 30%;
 }
 
 .game-frame {
@@ -330,10 +356,25 @@ header {
 
 .plan {
   width: 80%;
-  height: 80vh;
+  height: 70vh;
   margin: 0 8px;
-  background-color: rgb(255, 251, 215);
+  background-color: #fbcb7b;
   border-radius: 24px;
+  border: 3px solid #48575e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plan-top {
+  margin: 0 auto;
+  height: 30%;
+}
+
+.plan-title {
+  height: 10%;
+  text-align: center;
+  font-size: 10vw;
 }
 
 .bird-slider {
@@ -365,7 +406,7 @@ header {
   position: relative;
   margin-bottom: 8px;
   text-align: center;
-  background-color: rgb(251, 203, 123);
+  background-color: #fbcb7b;
   border-top: 3px solid #48575e;
 }
 
