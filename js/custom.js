@@ -47,6 +47,7 @@ $(function(){
   });
 });
 
+
 var omikujiOn = false;
 //むぎのセリフ
 $(function(){
@@ -177,3 +178,13 @@ $(function(){
     centerPadding: "10%",
   });
 })
+$(function(){
+  $(".option-slider").slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 2,
+    centerMode: true,
+    centerPadding: "10%",
+  });
+})
+
