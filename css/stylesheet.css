@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* 変数 ------------------------------- */
 /* 共通 ------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .media {
   font-size: 16px;
 }
@@ -97,6 +101,8 @@ body {
   text-decoration: none;
   padding: 6px 18px;
   border-radius: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 /* ヘッダー ------------------------------- */
@@ -316,7 +322,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 3px solid #48575e;
+  border: 2px solid #48575e;
 }
 .bg-button:active {
   width: 30%;
