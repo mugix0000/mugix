@@ -217,7 +217,7 @@ header {
 .bg {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url("../images/bg-water.svg");
   background-size: cover;
 }
@@ -361,6 +361,12 @@ header {
   z-index: 40;
 }
 
+.option-slider {
+  width: 100%;
+  margin: 16px auto 64px auto;
+  z-index: 40;
+}
+
 .plan {
   width: 80%;
   aspect-ratio: 1/1;
@@ -415,11 +421,10 @@ header {
 
 .button-hide {
   position: absolute;
-  top: -10%;
-  right: -5%;
+  top: -10px;
+  right: -10px;
   transform: rotateZ(45deg);
-  width: 20%;
-  height: 20%;
+  width: 40px;
 }
 
 .bird-slider {
@@ -452,7 +457,7 @@ header {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   display: none;
   align-items: center;
   justify-content: center;
@@ -462,8 +467,8 @@ header {
   position: relative;
   background-color: beige;
   border: 3px solid #48575e;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  max-width: 600px;
   border-radius: 24px;
 }
 
