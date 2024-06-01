@@ -81,6 +81,18 @@ $(window).scroll(function(){
     
   }
 });
+//モーダル
+$(function(){
+  $("#modal-open").on("click", function(){
+    var modalId = $(this).data("modal");
+    $(modalId).css("display", "flex");
+  });
+})
+$(function(){
+  $(".button-hide").on("click", function(){
+    $(this).parent().parent().css("display", "none");
+  });
+});
 /*
 $(function(){
   $("#background-color-on").on("inview", function (event, isInView) {

@@ -244,41 +244,61 @@
       <img src="images/menu.svg" class="inview-appear is-disappear subtitle" style="width: 80%; margin: 0 auto; display: block;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜メニュー〜</p>
     </div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
+        基本のプランはシンプルに３種類です<br>
+        詳しい内容はメニューをタッチして詳細をご覧ください<br>
+      </div>
+    </div>
+    <div class="area" style="text-align: center; font-size: 2em; font-weight: bold;">
+      BASIC PLAN
+    </div>
     <div class="plan-slider">
       <div class="plan">
         <img src="images/mugi-3.svg" class="plan-top">
         <div class="plan-title">テンプレート</div>
         <div class="plan-title">¥30,000</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <div style="text-align: center; margin-top: 8px; font-size: 4vw;">
+          <div id="modal-open" data-modal="#plan-simple" class="button">詳しくはこちら</div>
+        </div>
       </div>
       <div class="plan">
         <img src="images/anchan.svg" class="plan-top">
         <div class="plan-title">テンプレートCMS</div>
         <div class="plan-title">¥50,000</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <div style="text-align: center; margin-top: 8px; font-size: 4vw;"><a href="#contact" class="button">詳しくはこちら</a></div>
       </div>
       <div class="plan">
         <img src="images/goma.svg" class="plan-top">
         <div class="plan-title">カスタム</div>
         <div class="plan-title">¥100,000〜</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <div style="text-align: center; margin-top: 8px; font-size: 4vw;"><a href="#contact" class="button">詳しくはこちら</a></div>
       </div>
+    </div>
+    <div class="area" style="text-align: center; font-size: 2em; font-weight: bold;">
+      OPTION
     </div>
     <div class="option-slider">
       <div class="option">
         <div class="option-title" style="margin-top: 30%;">小規模な更新</div>
         <div class="option-title">¥10,000</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <img src="images/button-plus.svg" class="button-plus">
       </div>
       <div class="option">
         <div class="option-title" style="margin-top: 30%;">大規模な更新</div>
         <div class="option-title">¥応相談</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <img src="images/button-plus.svg" class="button-plus">
       </div>
       <div class="option">
         <div class="option-title" style="margin-top: 30%;">画像制作</div>
         <div class="option-title">¥10,000</div>
-        <div style="text-align: center; margin-top: 8px;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <img src="images/button-plus.svg" class="button-plus">
+      </div>
+    </div>
+    <!-- modal -->
+    <div class="modal-frame" id="plan-simple">
+      <div class="modal-content">
+        <img src="images/button-plus.svg" class="button-hide">
       </div>
     </div>
     <!-- contact -->
