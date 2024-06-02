@@ -1,14 +1,16 @@
 //メニューボタン
 $(function () {
     $("#js-hamburger-menu, .navigation_link").on("click", function () {
-      $(".navigation").slideToggle(100)
-      $(".hamburger-menu").toggleClass("hamburger-menu-open")
+      $(".navigation").toggle();
+      $(".hamburger-menu").toggleClass("hamburger-menu-open");
       if ($("header").hasClass("header-color-open")) {
-        setTimeout(function () {
-            $(".header-color").removeClass("header-color-open")
-          }, 100);
+        $(".header-color").removeClass("header-color-open");
+        $(".rope").css("z-index", "20");
+        $("body").css("overflow", "");
       } else {
-        $(".header-color").addClass("header-color-open")
+        $(".header-color").addClass("header-color-open");
+        $(".rope").css("z-index", "100");
+        $("body").css("overflow", "hidden");
       }
     });
 });
@@ -86,11 +88,13 @@ $(function(){
   $("#modal-open").on("click", function(){
     var modalId = $(this).data("modal");
     $(modalId).css("display", "flex");
+    $("body").css("overflow", "hidden");
   });
 })
 $(function(){
   $(".button-hide").on("click", function(){
     $(this).parent().parent().css("display", "none");
+    $("body").css("overflow", "");
   });
 });
 /*

@@ -33,12 +33,20 @@
       <span class="hamburger-menu_bar"></span>
     </button>
     <nav class="navigation">
-      <ul class="navigation_list">
-        <li class="navigation_list-item"><a href="#" class="navigation_link">会社情報</a></li>
-        <li class="navigation_list-item"><a href="#" class="navigation_link">事業紹介</a></li>
-        <li class="navigation_list-item"><a href="#" class="navigation_link">お知らせ</a></li>
-        <li class="navigation_list-item"><a href="#" class="navigation_link">お問い合わせ</a></li>
-      </ul>
+      <div class="navi-container">
+        <img src="images/mugi-3.svg" class="shake" id="mugi-button" style="width: 30%;margin-left: 5%;">
+        <div>
+          お問い合わせはこちらから<br>
+          LINE MUGIX公式アカウント
+        </div>
+        <a href="https://lin.ee/QZJ1BCv">
+          <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style="height: 50px; margin: 12px 0; border-radius: 24px;">
+        </a>
+        <img src="https://qr-official.line.me/gs/M_713uwqqm_GW.png?oat_content=qr" style="margin-right: 30%; width: 30%; max-width: 200px; border-radius: 8px;">
+        <ul class="navigation_list">
+          <li><a href="#" class="navigation_link">プライバシーポリシー</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!-- smoke -->
@@ -73,10 +81,10 @@
     </div>
     <div class="area" id="background-color-on" style="margin-bottom: 160px; height: 600px;">
       <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 2; ">
-        このサイトは制作の紹介やお問い合わせと同時に、実例の見本にもなっております<br>
+        このサイトは制作のご案内やお問い合わせと同時に、実例の見本にもなっております<br>
         お客様のプランのご参考にいかがでしょうか？<br>なお、クリックのできるところがいくつかございます<br>
         どうぞごゆっくりお楽しみ下さい
-        <div style="text-align: right; margin-top: 8px;"><a href="#contact" class="button">問い合わせ</a></div>
+        <div style="text-align: right; margin-top: 8px;"><a href="#contact" class="button">お問い合わせ</a></div>
       </div>
       <img src="images/bg-title.svg" class="palette-re" style="animation: rotate-anim 15s linear infinite reverse; pointer-events: none;">
       <div class="palette" style="animation: rotate-anim 20s linear infinite;">
@@ -127,7 +135,7 @@
         そんな時はお任せ下さい！<br>シンプルで見やすいホームページでもオシャレなホームページでも皆さんのご要望を叶えます<br>
       </div>
     </div>
-    <div class="area-horizon" style="width: 90%; height: 200px; margin: 16px 5%;">
+    <div class="area-horizon" style="width: 90%; margin: 5% 5% 15% 5%;">
       <div style="display: flex; flex-wrap: wrap; width: 50%;">
         <div class="game-frame"><div class="game-button" id="ann-game1">P</div></div>
         <div class="game-frame"><div class="game-button" id="ann-game2">U</div></div>
@@ -135,7 +143,7 @@
         <div class="game-frame"><div class="game-button" id="ann-game4">H</div></div>
       </div>
       <div style="position: relative; width: 50%;">
-        <img src="images/nice-anchan.svg" id="annchan" style="width: 100%; max-width: 300px; position: absolute; bottom: -20%; right: -120%; transition: 1s;">
+        <img src="images/nice-anchan.svg" id="annchan" style="width: 100%; max-width: 300px; position: absolute; bottom: -5%; right: -120%; transition: 1s;">
       </div>
     </div>
     <!-- workflow -->
@@ -147,91 +155,102 @@
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜完成までの流れ〜</p>
     </div>
     <!-- meeting -->
-    <div style="margin-bottom: 32px; padding: 4px;" class="area-orange">
-      <div class="pop-sub inview fade-in-bottom">まずはご相談から</div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
+        まずはご相談ください！<br>
+        依頼するかどうか悩んでても、質問だけでも大丈夫です<br>
+        <div style="text-align: right; margin-top: 8px;"><a href="#contact" class="button">お問い合わせ</a></div>
+      </div>
     </div>
     <div class="area-vertical" style="margin-bottom: 64px;">
       <div class="area">
-        <div class="inview fade-in-left" style="background-color: blue; width: 50%; height: 200px; margin-left: auto;"></div>
-      </div>
-      <div class="area">
-        <div class="text-box inview fade-in-right"style="width: 60%;">
-          お問い合わせ頂いた後はまずは打ち合わせの日程を決めましょう<br>時間さえ合えば、その日でも大丈夫です
+        <div class="text-box inview fade-in-right"style="width: 60%; float: right;">
+          お問い合わせにて質問の回答や簡単なヒアリングを行った後、依頼をご検討頂いた場合、打ち合わせの日程を決めます<br>
+          時間さえ合えば、その日でも大丈夫です<br>
+          ちなみに料金は打ち合わせの段階では発生しませんので、お気軽にどうぞ
         </div>
       </div>
       <div class="area">
-        <div class="inview fade-in-left" style="background-color: blue; width: 40%; height: 100px; margin-left: 20%;"></div>
+        <img src="images/arrow.svg" class="inview fade-in-bottom arrow" style="transform: rotateZ(30deg);">
       </div>
       <div class="area">
-        <div class="text-box inview fade-in-right" style="width: 60%; margin-left: 10%;">
-          打ち合わせの基本スタイルは、電話や通信アプリで会話しながら、iPhoneのフリーボードアプリかgoogleのジャムボードアプリで
-          一緒に完成イメージを作っていきます<br>
+        <div class="text-box inview fade-in-left" style="width: 60%;">
+          打ち合わせの基本スタイルは、通信アプリで会話しながら、フリーボードアプリを使って一緒に完成イメージを作っていきます<br>
+          アプリ等を使ったことがなくても大丈夫、しっかりとご案内いたします<br>
+          ご希望があれば、他の打ち合わせ方法でも対応いたします
         </div>
       </div>
       <div class="area">
-        <div class="inview fade-in-right" style="background-color: blue; width: 70%; height: 80px;"></div>
+        <img src="images/arrow.svg" class="inview fade-in-bottom arrow" style="transform: rotateZ(-30deg);">
       </div>
       <div class="area">
-        <div class="text-box inview fade-in-left" style="width: 80%; margin-left: auto;">
+        <div class="text-box inview fade-in-right" style="width: 60%; float: right;">
           作りたいサイトのイメージが固まってなくても大丈夫です！アイデアのお手伝いをしますので一緒に完成イメージを作りましょう<br><br>
-          またサイトに載せる画像は用意していただきますが、画像が無いなどの場合はお気軽にご相談ください
+          またサイトに載せる画像は用意していただきますが、画像が無いなどの場合はご相談ください
         </div>
       </div>
     </div>
     <!-- create -->
-    <div style="margin-bottom: 32px; padding: 4px;" class="area-orange">
-      <div class="pop-sub inview fade-in-bottom">制作と修正</div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
+        打ち合わせの次は実際にサイトを制作します<br>
+        修正を行いながら完成を目指しましょう！<br>
+      </div>
     </div>
     <div class="area-vertical" style="margin-bottom: 64px;">
       <div class="area">
-        <div class="text-box inview fade-in-right"style="width: 70%;">
-          打ち合わせで完成のイメージができたので、早速ウェブページ制作に取り掛かります<br>
-          サイトの規模にもよりますが、だいたい１週間で完成します<br>
-          テンプレートを使ったページだともっと早くて２〜３日で完成します<br>
+        <div class="text-box inview fade-in-right"style="width: 60%; float: right;">
+          打ち合わせで作った完成のイメージをもとに、仮のサイト制作に取り掛かります<br>
+          サイトの規模にもよりますが、だいたい２週間で完成します<br>
+          テンプレートを使ったページだともっと早くて１週間以内に完成します<br>
         </div>
       </div>
       <div class="area">
-        <div class="inview fade-in-left" style="background-color: blue; width: 60%; height: 200px; margin-left: 20%;"></div>
+        <img src="images/arrow.svg" class="inview fade-in-bottom arrow" style="transform: rotateZ(30deg);">
       </div>
       <div class="area">
-        <div class="text-box inview fade-in-left" style="width: 60%; margin-left: auto;">
-          完成した仮のサイトを見ながら、再度打ち合わせをします<br>
-          ここで修正する箇所や、サイトに載せる画像を調整していきます<br>
+        <div class="text-box inview fade-in-left" style="width: 60%;">
+          完成した仮のサイトを見ながら、再度打ち合わせをしますが<br>
+          その前にここで大切なポイントがあります<br><br>
+          仮のサイトを修正する前のこの段階で制作を正式に依頼するかどうか決定していただきます<br>
+          一生懸命作りますのでサイトを見てご判断してください<br><br>
+          よろしければ完成に向けた修正作業に入ります<br>
         </div>
       </div>
       <div class="area">
-        <div class="inview fade-in-left" style="background-color: blue; width: 50%; height: 200px; margin-left: auto;"></div>
+        <img src="images/arrow.svg" class="inview fade-in-bottom arrow" style="transform: rotateZ(-30deg);">
       </div>
       <div class="area">
-        <div class="text-box inview fade-in-right" style="width: 60%;">
+        <div class="text-box inview fade-in-right" style="width: 60%; float: right;">
           修正ポイントを直します<br>
-          なるべくはその日、その場で修正しますが、修正箇所によっては後日改めて、となることもあります<br>
+          画像の挿入や調整なども一緒に行います<br>
           修正後は再度打ち合わせをします<br><br>
-          基本的に修正回数は２回までとなります
+          基本的に修正回数は２回までとなりますのでご注意ください
         </div>
       </div>
     </div>
     <!-- completed -->
-    <div style="margin-bottom: 32px; padding: 4px;" class="area-orange">
-      <div class="pop-sub inview fade-in-bottom">完成！</div>
+    <div class="area" style="margin-bottom: 48px;">
+      <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
+        サイトが完成しました！<br>
+        アフターケアもしっかりと行います<br>
+      </div>
     </div>
     <div class="area-vertical" style="margin-bottom: 64px;">
       <div class="area">
-        <div class="inview fade-in-left" style="background-color: blue; width: 70%; height: 200px; margin-left: auto;"></div>
-      </div>
-      <div class="area">
-        <div class="text-box inview fade-in-right"style="width: 60%;">
+        <div class="text-box inview fade-in-right"style="width: 60%; float: right;">
           出来上がったサイトをサーバー上にアップして公開します<br>
-          希望があればドメインの設定やメールアドレスの設定などもここで行います
+          ご希望があればドメインの設定やメールアドレスの設定などもここで行います
         </div>
       </div>
       <div class="area">
-        <div class="text-box inview fade-in-left" style="width: 80%; margin-left: auto;">
-          アクセス解析の方法、CMSの場合は記事やページの更新方法などサイトの使い方、運用方法もここでレクチャーします
-        </div>
+        <img src="images/arrow.svg" class="inview fade-in-bottom arrow" style="transform: rotateZ(30deg);">
       </div>
       <div class="area">
-        <div class="inview fade-in-right" style="background-color: blue; width: 100%; height: 100px;"></div>
+        <div class="text-box inview fade-in-left" style="width: 60%;">
+          今後のサイトの管理の方法やアクセス解析の方法<br>
+          CMSの場合は記事やページの更新方法などのサイトの使い方、運用方法もここでレクチャーします<br>
+        </div>
       </div>
     </div>
     <!-- prices -->
