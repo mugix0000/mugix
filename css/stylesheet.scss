@@ -78,7 +78,7 @@ body {
     height: 180px;
     transform: translate(45%);
     background-image: url("../images/climber.svg") ;
-    background-size: 300% auto;
+    background-size: 500% auto;
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 30;
@@ -88,6 +88,20 @@ body {
 @keyframes climbing {
     0% { background-position: 0 0; }
     100% { background-position: -240px 0; }
+}
+.scroll-down {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: -230px;
+    width: 250px;
+}
+.scroll-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
 }
 .button {
     background-color: $primary-color;
@@ -177,6 +191,7 @@ header {
 .navi-container {
     margin: 0 auto;
     width: 90%;
+    height: 100%;
     max-width: 1024px;
     position: relative;
     display: flex;
@@ -302,6 +317,13 @@ header {
         width: 30%;
         height: 30%;
     }
+}
+.news {
+    background-color: $secondary-color;
+    border-radius: 24px;
+    margin: 12px 5%;
+    padding: 12px 24px;
+    z-index: 30;
 }
 .game-frame {
     width: 50%;
@@ -440,7 +462,7 @@ header {
 }
 .area-footer {
     width: 100%;
-    padding: 40px 0 100px 0;
+    padding: 40px 0 60px 0;
     position: relative;
     margin-bottom: 8px;
     text-align: center;

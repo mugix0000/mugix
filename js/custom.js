@@ -1,4 +1,5 @@
 //メニューボタン
+var menuIsOpen = false;
 $(function () {
     $("#js-hamburger-menu, .navigation_link").on("click", function () {
       $(".navigation").toggle();
@@ -7,10 +8,17 @@ $(function () {
         $(".header-color").removeClass("header-color-open");
         $(".rope").css("z-index", "20");
         $("body").css("overflow", "");
+        if ($(window).scrollTop() < 150) {
+          $(".scroll-down").css("display", "block");
+        }
+        menuIsOpen = false;
       } else {
         $(".header-color").addClass("header-color-open");
         $(".rope").css("z-index", "100");
         $("body").css("overflow", "hidden");
+        $(".scroll-down").css("display", "none");
+        $(".scroll-top").css("display", "none");
+        menuIsOpen = true;
       }
     });
 });
@@ -48,10 +56,8 @@ $(function(){
     }
   });
 });
-
-
-var omikujiOn = false;
 //むぎのセリフ
+var omikujiOn = false;
 $(function(){
   $("#mugi-button").on("click", function () {
     if (omikujiOn) return;
@@ -78,11 +84,6 @@ $(function(){
     $(".bg").stop().css("background-image", bgImages[index]);
   });
 });
-$(window).scroll(function(){
-  if ($(this).scrollTop() < 200) {
-    
-  }
-});
 //モーダル
 $(function(){
   $("#modal-open").on("click", function(){
@@ -97,29 +98,42 @@ $(function(){
     $("body").css("overflow", "");
   });
 });
-/*
-$(function(){
-  $("#background-color-on").on("inview", function (event, isInView) {
-    if (isInView) {
-      $("body").stop().css("background-color", "#b9d9c3");
-    }
-  });
-});
-*/
 //クライマー
 var isScrolling = false;
 var id = false;
 $(window).on("scroll", function(){
   if (!isScrolling) {
     $(".climber").css("animation", "climbing 0.3s steps(2) infinite");
+    $(".scroll-down").css("display", "none");
     isScrolling = true;
   }
   if(id) clearTimeout(id);
   id = setTimeout(function(){
     $(".climber").css("animation", "none");
-    $(".climber").css("background-position", "-240px 0");
+    if ($(window).scrollTop() < 150){
+      $(".climber").css("background-position", "-240px 0");
+      $(".scroll-down").css("display", "block");
+      $(".scroll-top").css("display", "none");
+    }else if($(window).scrollTop() + $(window).height() > $(document).height() - 30) {
+      $(".climber").css("background-position", "-480px 0");
+      $(".scroll-down").css("display", "none");
+      if(!menuIsOpen){
+        $(".scroll-top").css("display", "block");
+      }
+    }else {
+      $(".climber").css("background-position", "-360px 0");
+      $(".scroll-down").css("display", "none");
+      $(".scroll-top").css("display", "none");
+    }
     isScrolling = false;
   }, 500);
+});
+//初期位置
+$(function(){
+  if ($(window).scrollTop() < 150) {
+    $(".climber").css("background-position", "-240px 0");
+    $(".scroll-down").css("display", "block");
+  }
 });
 //ハチ
 var beeLeft = 0;

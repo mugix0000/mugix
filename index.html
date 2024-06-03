@@ -23,6 +23,7 @@
   -->
 </head>
 <body class="media">
+  <div style="position: absolute; top: 0;" id="top"></div>
   <div class="bg"></div>
   <!-- header -->
   <header class="header-color">
@@ -34,18 +35,26 @@
     </button>
     <nav class="navigation">
       <div class="navi-container">
-        <img src="images/mugi-3.svg" class="shake" id="mugi-button" style="width: 30%;margin-left: 5%;">
-        <div>
-          お問い合わせはこちらから<br>
-          LINE MUGIX公式アカウント
+        <div class="area-horizon" style="height: 20%;">
+          <img src="images/mugi-3.svg" class="shake" style="height: 100%; margin-left: 5%;">
+          <img src="images/hello.svg" style="height: 50%; transform: rotateZ(-10deg); margin-left: -8%;">
         </div>
-        <a href="https://lin.ee/QZJ1BCv">
-          <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style="height: 50px; margin: 12px 0; border-radius: 24px;">
-        </a>
-        <img src="https://qr-official.line.me/gs/M_713uwqqm_GW.png?oat_content=qr" style="margin-right: 30%; width: 30%; max-width: 200px; border-radius: 8px;">
-        <ul class="navigation_list">
+        <div style="height: 20%;">
+        
+        </div>
+        <ul class="navigation_list" style="height: 10%;">
           <li><a href="#" class="navigation_link">プライバシーポリシー</a></li>
         </ul>
+        <div style="width: 70%; height: 40%;">
+          <div>
+            お問い合わせはこちらから<br>
+            LINE MUGIX公式アカウント
+          </div>
+          <a href="https://lin.ee/QZJ1BCv">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style="height: 10%; margin: 12px 0; border-radius: 24px; display: block;">
+          </a>
+          <img src="https://qr-official.line.me/gs/M_713uwqqm_GW.png?oat_content=qr" style="margin-right: 50%; height: 50%; max-width: 200px; border-radius: 8px;">
+        </div>
       </div>
     </nav>
   </header>
@@ -56,7 +65,10 @@
     <!-- climber -->
     <div class="rope">
       <div class="climber-frame">
-        <div class="climber"></div>
+        <div class="climber">
+          <img src="images/scroll-down.svg" class="scroll-down">
+          <a href="#top"><img src="images/scroll-top.svg" class="scroll-top"></a>
+        </div>
       </div>
     </div>
     <!-- main -->
@@ -79,7 +91,7 @@
       </div>
       <div class="mugi-selif" style="width: 30%;"></div>
     </div>
-    <div class="area" id="background-color-on" style="margin-bottom: 160px; height: 600px;">
+    <div class="area" id="background-color-on" style="margin-bottom: 24px; height: 600px;">
       <div class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 2; ">
         このサイトは制作のご案内やお問い合わせと同時に、実例の見本にもなっております<br>
         お客様のプランのご参考にいかがでしょうか？<br>なお、クリックのできるところがいくつかございます<br>
@@ -95,7 +107,13 @@
         <div id="bg-5" class="bg-button" style="background-image: url('images/bg-salmon.svg'); transform: translate(-160%, -115%);"></div>
         <div id="bg-6" class="bg-button" style="background-image: url('images/bg-yellow.svg'); transform: translate(-160%, 15%);"></div>
       </div>
-      <img src="images/ink.svg" class="inview-appear is-disappear" style="width: 40%; max-width: 300px; position: absolute; bottom: -30%; right: 0;">
+    </div>
+    <div class="news">
+      <div style="margin-left: 24px; font-size: 1.2em; color: #eb5e30;">新着情報</div>
+      <div>
+        料金プランの改定を行いました！<br>
+        「テンプレート」「テンプレートCMS」「オリジナル」の３種類のプランでより分かりやすくしました
+      </div>
     </div>
     <!-- about_us -->
     <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
@@ -103,7 +121,7 @@
       <img src="images/rakko.svg" class="inview-rakko" style="width: 50%; position: absolute; top: -60px; left: -50%;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜ムギックスについて〜</p>
     </div>
-    <img src="images/bee.svg" id="bee" style="width: 25%; position: absolute; z-index: 10;">
+    <img src="images/bee.svg" id="bee" style="width: 25%; position: absolute; z-index: 10; top: -300px;">
     <div class="area">
       <div style="display: flex; flex-direction: row;">
         <div class="text-box inview fade-in-bottom" style="writing-mode: vertical-rl; margin-top: auto;">
@@ -156,6 +174,9 @@
     </div>
     <!-- meeting -->
     <div class="area" style="margin-bottom: 48px;">
+      <div class="menu-title inview fade-in-bottom" style="margin-bottom: 24px;">
+        STEP 1
+      </div>
       <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
         まずはご相談ください！<br>
         依頼するかどうか悩んでても、質問だけでも大丈夫です<br>
@@ -192,6 +213,9 @@
     </div>
     <!-- create -->
     <div class="area" style="margin-bottom: 48px;">
+      <div class="menu-title inview fade-in-bottom" style="margin-bottom: 24px;">
+        STEP 2
+      </div>
       <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
         打ち合わせの次は実際にサイトを制作します<br>
         修正を行いながら完成を目指しましょう！<br>
@@ -231,6 +255,9 @@
     </div>
     <!-- completed -->
     <div class="area" style="margin-bottom: 48px;">
+      <div class="menu-title inview fade-in-bottom" style="margin-bottom: 24px;">
+        STEP 3
+      </div>
       <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
         サイトが完成しました！<br>
         アフターケアもしっかりと行います<br>
@@ -255,6 +282,7 @@
     </div>
     <!-- prices -->
     <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+      <img src="images/shoebill.svg" class="inview-appear is-disappear" style="position: absolute; bottom: 0; right: 10%; width: 20%;">
       <img src="images/menu2.svg" class="inview-appear is-disappear subtitle" style="width: 80%; margin: 0 auto; display: block;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜メニュー〜</p>
     </div>
