@@ -112,9 +112,11 @@ $(window).on("scroll", function(){
     $(".climber").css("animation", "none");
     if ($(window).scrollTop() < 150){
       $(".climber").css("background-position", "-240px 0");
-      $(".scroll-down").css("display", "block");
+      if(!menuIsOpen){
+        $(".scroll-down").css("display", "block");
+      }
       $(".scroll-top").css("display", "none");
-    }else if($(window).scrollTop() + $(window).height() > $(document).height() - 30) {
+    }else if($(window).scrollTop() + $(window).height() > $(document).height() - 40) {
       $(".climber").css("background-position", "-480px 0");
       $(".scroll-down").css("display", "none");
       if(!menuIsOpen){
