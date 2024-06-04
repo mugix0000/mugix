@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* 変数 ------------------------------- */
+/* 共通 ------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+.media {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .media {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .media {
+    font-size: 20px;
+  }
+}
+body {
+  color: #48575e;
+  font-family: "Avenir Next", "Hiragino Sans", sans-serif;
+  font-weight: 600;
+  transition: 2s;
+  position: relative;
+  margin: 0;
+  background-color: rgb(255, 253, 235);
+}
+
+.container {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 1024px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.smoke-top {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+}
+
+.smoke-bottom {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+}
+
+.sentense {
+  margin-bottom: 24px;
+  line-height: 2;
+}
+
+.left-frame {
+  border-left: 10px solid #4e37f9;
+  padding-left: 12px;
+  font-size: 1.5em;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+footer {
+  height: 150px;
+  background-color: #4e37f9;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* ヘッダー ------------------------------- */
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-color {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.header-color-open {
+  background-color: #4e37f9;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 24px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.hamburger-menu_bar {
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  background: #48575e;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.hamburger-menu_bar:first-child {
+  top: 16px;
+}
+
+.hamburger-menu_bar:nth-child(2) {
+  top: 24px;
+}
+
+.hamburger-menu_bar:last-child {
+  top: 32px;
+}
+
+.hamburger-menu-open .hamburger-menu_bar {
+  top: 50%;
+}
+
+.hamburger-menu-open .hamburger-menu_bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.hamburger-menu-open .hamburger-menu_bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.hamburger-menu-open .hamburger-menu_bar:nth-child(2) {
+  display: none;
+}
+
+.navigation {
+  display: none;
+  background: #4e37f9;
+  position: absolute;
+  top: 49px;
+  height: 100lvh;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.navi-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1024px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+
+.navigation-main {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 8px 0 0 0;
+}
+
+.navigation-sub {
+  margin: 0 0 8px 36px;
+  color: white;
+}
+
+.mugi {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-border {
+  border-top: 2px solid white;
+}/*# sourceMappingURL=mugix.css.map */
