@@ -9,14 +9,34 @@ html {
   font-size: 16px;
 }
 
+.media-border {
+  border: 2px solid #48575e;
+}
+
+.media-container {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .media {
     font-size: 18px;
+  }
+  .media-border {
+    border: 3px solid #48575e;
+  }
+  .media-container {
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .media {
     font-size: 20px;
+  }
+  .media-border {
+    border: 4px solid #48575e;
+  }
+  .media-container {
+    margin: 0 10% 0 auto;
   }
 }
 body {
@@ -26,10 +46,10 @@ body {
   transition: 2s;
   position: relative;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
-  margin: 0 auto;
   width: 98%;
   max-width: 1024px;
   position: relative;
@@ -347,11 +367,9 @@ header {
   width: 25%;
   height: 25%;
   border-radius: 50%;
-  border: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 2px solid #48575e;
   cursor: pointer;
 }
 .bg-button:active {
@@ -382,7 +400,6 @@ header {
   text-align: center;
   color: #fbcb7b;
   aspect-ratio: 1/1;
-  border: 2px solid #48575e;
   border-radius: 10px;
   background-color: #eb5e30;
   box-shadow: 0px 12px 0 #7a5143;
@@ -457,14 +474,14 @@ header {
 
 .plan-title {
   text-align: center;
-  font-size: 6vw;
+  font-size: clamp(16px, 6vw, 64px);
   line-height: 1.3;
 }
 
 .option-title {
   text-align: center;
   line-height: 1;
-  font-size: 4vw;
+  font-size: clamp(16px, 4vw, 48px);
 }
 
 .button-plus {

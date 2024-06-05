@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRZX8J6Q2D"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NRZX8J6Q2D');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="オシャレで遊びゴコロのあるホームページを作ります">
@@ -51,7 +60,7 @@
   <!-- smoke -->
   <div class="smoke-top"></div>
   <div class="smoke-bottom"></div>
-  <div class="container">
+  <div class="container media-container">
     <!-- climber -->
     <div class="rope">
       <div class="climber-frame">
@@ -90,19 +99,19 @@
       </div>
       <img src="images/bg-title.svg" class="palette-re" style="animation: rotate-anim 15s linear infinite reverse; pointer-events: none;">
       <div class="palette" style="animation: rotate-anim 20s linear infinite;">
-        <div id="bg-1" class="bg-button" style="background-image: url('images/bg-water.svg'); transform: translate(-50%, 80%);"></div>
-        <div id="bg-2" class="bg-button" style="background-image: url('images/bg-green.svg'); transform: translate(-50%, -180%);"></div>
-        <div id="bg-3" class="bg-button" style="background-image: url('images/bg-pink.svg'); transform: translate(60%, 15%);"></div>
-        <div id="bg-4" class="bg-button" style="background-image: url('images/bg-blue.svg'); transform: translate(60%, -115%);"></div>
-        <div id="bg-5" class="bg-button" style="background-image: url('images/bg-salmon.svg'); transform: translate(-160%, -115%);"></div>
-        <div id="bg-6" class="bg-button" style="background-image: url('images/bg-yellow.svg'); transform: translate(-160%, 15%);"></div>
+        <div id="bg-1" class="bg-button media-border" style="background-image: url('images/bg-water.svg'); transform: translate(-50%, 80%);"></div>
+        <div id="bg-2" class="bg-button media-border" style="background-image: url('images/bg-green.svg'); transform: translate(-50%, -180%);"></div>
+        <div id="bg-3" class="bg-button media-border" style="background-image: url('images/bg-pink.svg'); transform: translate(60%, 15%);"></div>
+        <div id="bg-4" class="bg-button media-border" style="background-image: url('images/bg-blue.svg'); transform: translate(60%, -115%);"></div>
+        <div id="bg-5" class="bg-button media-border" style="background-image: url('images/bg-salmon.svg'); transform: translate(-160%, -115%);"></div>
+        <div id="bg-6" class="bg-button media-border" style="background-image: url('images/bg-yellow.svg'); transform: translate(-160%, 15%);"></div>
       </div>
     </div>
     <div class="news">
       <div style="margin-left: 24px; font-size: 1.2em; color: #eb5e30;">新着情報</div>
       <div>
         料金プランの改定を行いました！<br>
-        「テンプレート」「テンプレートCMS」「オリジナル」の３種類のプランでより分かりやすくしました
+        「テンプレート」「テンプレートCMS」「オリジナル」の3種類のプランでより分かりやすくしました
       </div>
     </div>
     <!-- about_us -->
@@ -145,10 +154,10 @@
     </div>
     <div class="area-horizon" style="width: 90%; margin: 5% 5% 15% 5%;">
       <div style="display: flex; flex-wrap: wrap; width: 50%;">
-        <div class="game-frame"><div class="game-button" id="ann-game1">P</div></div>
-        <div class="game-frame"><div class="game-button" id="ann-game2">U</div></div>
-        <div class="game-frame"><div class="game-button" id="ann-game3">S</div></div>
-        <div class="game-frame"><div class="game-button" id="ann-game4">H</div></div>
+        <div class="game-frame"><div class="game-button media-border" id="ann-game1">P</div></div>
+        <div class="game-frame"><div class="game-button media-border" id="ann-game2">U</div></div>
+        <div class="game-frame"><div class="game-button media-border" id="ann-game3">S</div></div>
+        <div class="game-frame"><div class="game-button media-border" id="ann-game4">H</div></div>
       </div>
       <div style="position: relative; width: 50%;">
         <img src="images/nice-anchan.svg" id="annchan" style="width: 100%; max-width: 300px; position: absolute; bottom: -5%; right: -120%; transition: 1s;">
@@ -290,7 +299,7 @@
         <img src="images/mugi-3.svg" class="plan-top">
         <div class="plan-title">テンプレート</div>
         <div class="plan-title">¥30,000</div>
-        <div style="text-align: center; margin-top: 8px; font-size: 4vw;">
+        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
           <div id="modal-open" data-modal="#plan-simple" class="button">詳しくはこちら</div>
         </div>
       </div>
