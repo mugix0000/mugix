@@ -43,8 +43,10 @@ $(function(){
   $("#title").on("inview", function (event, isInView) {
     if (isInView) {
       $(this).stop().addClass("is-appear");
+      $(".side-menu").stop().addClass("is-appear");
       $(".inview-wani").stop().addClass("wani");
       $(".inview-kirin").stop().addClass("kirin");
+
     }
   });
 });
@@ -86,7 +88,7 @@ $(function(){
 });
 //モーダル
 $(function(){
-  $("#modal-open").on("click", function(){
+  $(".modal-open").on("click", function(){
     var modalId = $(this).data("modal");
     $(modalId).css("display", "flex");
     $("body").css("overflow", "hidden");
@@ -135,6 +137,8 @@ $(function(){
   if ($(window).scrollTop() < 150) {
     $(".climber").css("background-position", "-240px 0");
     $(".scroll-down").css("display", "block");
+  }else{
+    $(".side-menu").stop().addClass("is-appear");
   }
 });
 //ハチ

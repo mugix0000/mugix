@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-NRZX8J6Q2D');
   </script>
   <meta charset="utf-8">
@@ -41,8 +40,8 @@
         <div style="height: 20%;">
         
         </div>
-        <ul class="navigation_list" style="height: 10%;">
-          <li><a href="privacy_policy.html" class="navigation_link">プライバシーポリシー</a></li>
+        <ul class="navigation-list" style="height: 10%;">
+          <li><a href="privacy_policy.html" class="navigation-link">プライバシーポリシー</a></li>
         </ul>
         <div style="width: 70%; height: 40%;">
           <div>
@@ -60,6 +59,28 @@
   <!-- smoke -->
   <div class="smoke-top"></div>
   <div class="smoke-bottom"></div>
+  <!-- side-menu -->
+  <div class="side-menu is-disappear">
+    <div class="navi-container">
+      <div class="area-horizon" style="height: 30%;">
+        <img src="images/mugi-3.svg" class="shake" style="height: 100%; margin-left: 5%;">
+        <img src="images/hello.svg" style="height: 50%; transform: rotateZ(-10deg); margin-left: -8%;">
+      </div>
+      <ul class="navigation-list" style="height: 30%; border-bottom: 2px solid #48575e;">
+        <li><a href="#top" class="side-navigation-link">Top</a></li>
+        <li><a href="#about" class="side-navigation-link">About us ------ムギックスについて</a></li>
+        <li><a href="#workflow" class="side-navigation-link">Workflow ------完成までの流れ</a></li>
+        <li><a href="#prices" class="side-navigation-link">Menu ------料金プラン</a></li>
+        <li><a href="#contact" class="side-navigation-link">Contact ------お問い合わせ</a></li>
+      </ul>
+      <div style="height: 30%;">
+      
+      </div>
+      <div style="height: 10%; text-align: right;">
+        <a href="privacy_policy.html" style="text-decoration: none; color: #48575e;"><span>プライバシーポリシー</span></a>
+      </div>
+    </div>
+</div>
   <div class="container media-container">
     <!-- climber -->
     <div class="rope">
@@ -80,7 +101,7 @@
     </div>
     <div class="area" style="margin-bottom: 4px;">
       <h1 class="text-hor inview fade-in-bottom" style="margin: 0 20% 0 4%; line-height: 1.8; font-size: 1.2em;">いらっしゃいませ！<br>
-        ここはMUGIX DESIGNでございます<br><br>ホームページ制作はお任せください！<br>
+        ここはMUGIX DESIGNでございます<br><br>ホームページ制作のことならお任せください<br>
       </h1>
     </div>
     <div class="area-horizon" style="margin-left: 10%;"">
@@ -115,7 +136,7 @@
       </div>
     </div>
     <!-- about_us -->
-    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+    <div id="about" class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <img src="images/about-us3.svg" class="is-disappear subtitle" id="about-us">
       <img src="images/rakko.svg" class="inview-rakko" style="width: 50%; position: absolute; top: -60px; left: -50%;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜ムギックスについて〜</p>
@@ -164,7 +185,7 @@
       </div>
     </div>
     <!-- workflow -->
-    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+    <div id="workflow" class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <div class="bird-slider">
         <img src="images/bird.svg" style="position: absolute; width: 80%; top: 50%; left: 50%; z-index: 35;">
       </div>
@@ -280,7 +301,7 @@
       </div>
     </div>
     <!-- prices -->
-    <div class="area" style="margin-bottom: 24px; margin-top: 64px;">
+    <div id="prices" class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <img src="images/shoebill.svg" class="inview-appear is-disappear" style="position: absolute; bottom: 0; right: 10%; width: 20%;">
       <img src="images/menu2.svg" class="inview-appear is-disappear subtitle" style="width: 80%; margin: 0 auto; display: block;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜メニュー〜</p>
@@ -300,20 +321,24 @@
         <div class="plan-title">テンプレート</div>
         <div class="plan-title">¥30,000</div>
         <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
-          <div id="modal-open" data-modal="#plan-simple" class="button">詳しくはこちら</div>
+          <div data-modal="#plan-simple" class="button modal-open">詳しくはこちら</div>
         </div>
       </div>
       <div class="plan">
         <img src="images/anchan.svg" class="plan-top">
         <div class="plan-title">テンプレートCMS</div>
         <div class="plan-title">¥50,000</div>
-        <div style="text-align: center; margin-top: 8px; font-size: 4vw;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
+          <div data-modal="#plan-cms" class="button modal-open">詳しくはこちら</div>
+        </div>
       </div>
       <div class="plan">
         <img src="images/goma.svg" class="plan-top">
         <div class="plan-title">オリジナル</div>
         <div class="plan-title">¥100,000〜</div>
-        <div style="text-align: center; margin-top: 8px; font-size: 4vw;"><a href="#contact" class="button">詳しくはこちら</a></div>
+        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
+          <div data-modal="#plan-original" class="button modal-open">詳しくはこちら</div>
+        </div>
       </div>
     </div>
     <div class="menu-title">
@@ -340,12 +365,79 @@
     <div class="modal-frame" id="plan-simple">
       <div class="modal-content">
         <img src="images/button-plus.svg" class="button-hide">
-        <div>aaaa</div>
-        <div>aaaa</div>
+        <h2>STUDIOで作るテンプレートサイト</h2>
+        <div>
+          STUDIOのテンプレートを使用してホームページを制作しますので、低価格で非常にスピーディーです。<br>
+          スピーディではありますが、かなりの高品質なサイトを制作できます。<br>
+        </div>
+        <ul>
+          含まれるサービス
+          <li>STUDIOアカウント作成のお手伝い</li>
+          <li>サイト制作（５ページまで）</li>
+          <li>修正（２回）</li>
+          <li>独自ドメインの設定</li>
+          <li>完成後の更新等のレクチャー</li>
+        </ul>
+        <div>
+          ▪️注意点<br>
+          料金にはSTUDIOの使用でかかる費用は含まれていません。<br>
+          有料のテンプレートを使う際には、テンプレートの費用、STUDIOの利用を無料プランにしない場合月額980円、
+          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
+        </div>
+        <div style="margin-top: 8px;"><a href="https://cyan326691.studio.site" target="_blank" class="button">サンプルサイト</a></div>
+      </div>
+    </div>
+    <div class="modal-frame" id="plan-cms">
+      <div class="modal-content">
+        <img src="images/button-plus.svg" class="button-hide">
+        <h2>STUDIOで作るCMSサイト</h2>
+        <div>
+          CMSとは記事やニュース、画像の追加、差し替えなどが簡単にできるシステムです。<br>
+          更新方法などは、しっかりとご説明いたします。<br>
+        </div>
+        <ul>
+          含まれるサービス
+          <li>STUDIOアカウント作成のお手伝い</li>
+          <li>サイト制作（7ページまで）</li>
+          <li>修正（２回）</li>
+          <li>独自ドメインの設定</li>
+          <li>完成後の更新等のレクチャー</li>
+          <li>２週間のアフターサービス</li>
+        </ul>
+        <div>
+          ▪️注意点<br>
+          料金にはSTUDIOの使用でかかる費用は含まれていません。<br>
+          有料のテンプレートを使う際には、テンプレートの費用、STUDIOの利用を無料プランにしない場合月額2480円、
+          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
+        </div>
+        <div style="margin-top: 8px;"><a href="https://cyan326691.studio.site" target="_blank" class="button">サンプルサイト</a></div>
+      </div>
+    </div>
+    <div class="modal-frame" id="plan-original">
+      <div class="modal-content">
+        <img src="images/button-plus.svg" class="button-hide">
+        <h2>完全カスタムサイト</h2>
+        <div>
+          テンプレートを使用せず、一から作ります。<br>
+          デザインの要望なども可能な限りお応えします。当サイトのように動きの豊富な要素もOKです。<br>
+        </div>
+        <ul>
+          含まれるサービス
+          <li>サイト制作（7ページまで）</li>
+          <li>修正（5回）</li>
+          <li>サーバーへのデプロイ</li>
+          <li>独自ドメインの設定</li>
+          <li>完成後の更新等のレクチャー</li>
+        </ul>
+        <div>
+          ▪️注意点<br>
+          料金にはサーバーの使用量は含まれていません。どのサーバーを使うかは打ち合わせで決めましょう、無料のサーバーもあります。<br>
+          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
+        </div>
       </div>
     </div>
     <!-- contact -->
-    <div id="contact" class="area" style="margin-bottom: 24px; margin-top: 64px;" id="contact">
+    <div id="contact" class="area" style="margin-bottom: 24px; margin-top: 64px;">
       <img src="images/contact2.svg" class="inview-appear is-disappear subtitle" style="width: 80%; margin: 0 auto; display: block;">
       <img src="images/goma.svg" class="inview-appear is-disappear shake" style="width: 40%; position: absolute; bottom: 0; left: -10%;">
       <p style="text-align: center; transform: translate(0, -30px);" class="inview-appear is-disappear">〜お問い合わせ〜</p>
