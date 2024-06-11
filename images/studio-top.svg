@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <circle cx="500" cy="500" r="500" style="fill:rgb(235,94,48);"/>
+    <g transform="matrix(2,0,0,2,-30,0)">
+        <g transform="matrix(0.730769,0,0,1,16.1538,0)">
+            <path d="M320,330C320,313.443 301.605,300 278.947,300L101.053,300C78.395,300 60,313.443 60,330C60,346.557 78.395,360 101.053,360L278.947,360C301.605,360 320,346.557 320,330Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(0.384844,0,0,0.384844,41.186,226.601)">
+            <text x="107.577px" y="320.851px" style="font-family:'DelaGothicOne-Regular', 'Dela Gothic One';font-size:124.726px;fill:rgb(235,94,48);">低価格</text>
+        </g>
+    </g>
+    <g transform="matrix(2,0,0,2,60,150)">
+        <g transform="matrix(1.26923,0,0,1,-16.1538,0)">
+            <path d="M320,330C320,313.443 309.409,300 296.364,300L83.636,300C70.591,300 60,313.443 60,330C60,346.557 70.591,360 83.636,360L296.364,360C309.409,360 320,346.557 320,330Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(0.384844,0,0,0.384844,41.186,226.601)">
+            <text x="107.577px" y="320.851px" style="font-family:'DelaGothicOne-Regular', 'Dela Gothic One';font-size:124.726px;fill:rgb(235,94,48);">スピーディー</text>
+        </g>
+    </g>
+    <g transform="matrix(0.84,0,0,0.84,512.8,-44)">
+        <g transform="matrix(1.25,0,0,1.25,-157.5,-62.5)">
+            <circle cx="670" cy="210" r="80" style="fill:rgb(235,235,235);"/>
+        </g>
+    </g>
+    <g transform="matrix(1.93412,0,0,1.93412,-625.78,-378.918)">
+        <text x="425.042px" y="320px" style="font-family:'DelaGothicOne-Regular', 'Dela Gothic One';font-size:59.614px;fill:white;">S<tspan x="477.74px " y="320px ">T</tspan>UDIO</text>
+    </g>
+    <g transform="matrix(1.93412,0,0,1.93412,-521.482,-261.224)">
+        <text x="436.964px" y="320px" style="font-family:'DelaGothicOne-Regular', 'Dela Gothic One';font-size:59.614px;fill:white;">で作る</text>
+    </g>
+    <g transform="matrix(3.76859,0,0,3.76859,-1530.79,-645.949)">
+        <text x="425.042px" y="320px" style="font-family:'DelaGothicOne-Regular', 'Dela Gothic One';font-size:59.614px;fill:white;">HP制作</text>
+    </g>
+</svg>

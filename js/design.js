@@ -1,7 +1,7 @@
 //メニューボタン
 var menuIsOpen = false;
 $(function () {
-    $("#js-hamburger-menu, .navigation_link").on("click", function () {
+    $("#js-hamburger-menu, .navigation-link").on("click", function () {
       $(".navigation").toggle();
       $(".hamburger-menu").toggleClass("hamburger-menu-open");
       if ($("header").hasClass("header-color-open")) {
