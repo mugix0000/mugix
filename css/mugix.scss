@@ -82,6 +82,7 @@ li {
 }
 footer {
     height: 100px;
+    position: relative;
     background-color: $primary-color;
     color: white;
     text-align: center;
@@ -132,6 +133,17 @@ header {
 /* プラン --------------------------- */
 .area {
     margin: 40px 0 0 0;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    height: 100lvh;
+    background-image: url("../images/bg-water.svg");
+    background-size: cover;
+    transform: translateZ(0.01px);
 }
 .menu-area {
     display: flex;
@@ -196,7 +208,6 @@ header {
 }
 .status-area {
     display: flex;
-    font-size: clamp(16px, 1.5em, 20px);
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -204,10 +215,26 @@ header {
 }
 .status {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 4px 4px;
+}
+/* JS --------------------------------*/
+.fade-in-right {
+    transform: translate(100%, 0);
+    transition: 1s;
+}
+.fade-in-left {
+    transform: translate(-100%, 0);
+    transition: 1s;
+}
+.fade-in-anywhere {
+    transform: rotateX(90deg);
+    transition: 1s;
+}
+.is-show {
+    transform: translate(0, 0);
 }
