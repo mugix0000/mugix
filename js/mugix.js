@@ -42,7 +42,7 @@ $(function(){
       function menuOpen(index) {
         if(index < children.length) {
           var child = $(children[index]);
-          child.stop().addClass("is-show");
+          child.stop().addClass("is-flip");
           setTimeout(function(){
             menuOpen(index + 1);
           }, 100);

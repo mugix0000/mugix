@@ -77,11 +77,19 @@ $(function(){
     $(".mugi-selif").css("display", "block");
   });
 });
+//背景パレット
+$(function(){
+  $(".bg-palette-button").on("click", function(){
+    $(".bg-arrow").stop().toggleClass("bg-arrow-reverse");
+    $(".bg-palette").stop().toggleClass("bg-palette-appear");
+    $(".bg-text").stop().toggleClass("bg-palette-appear");
+  });
+});
 //背景変更
 var bgIDs = ["bg-1", "bg-2", "bg-3", "bg-4", "bg-5", "bg-6"];
 var bgImages = ['url("images/bg-water.svg")', 'url("images/bg-green.svg")', 'url("images/bg-pink.svg")', 'url("images/bg-blue.svg")', 'url("images/bg-salmon.svg")', 'url("images/bg-yellow.svg")'];
 $(function(){
-  $(".bg-button").on("click", function(){
+  $(".bg-picker").on("click", function(){
     var index = bgIDs.indexOf($(this).attr("id"));
     $(".bg").stop().css("background-image", bgImages[index]);
   });

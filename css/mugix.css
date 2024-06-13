@@ -262,4 +262,8 @@ header {
 
 .is-show {
   transform: translate(0, 0);
+}
+
+.is-flip {
+  transform: rotateX(720deg);
 }/*# sourceMappingURL=mugix.css.map */
