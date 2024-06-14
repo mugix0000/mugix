@@ -384,61 +384,29 @@ header {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3% 10% 6% 10%;
-  height: 40%;
+  padding: 3% 10% 5% 12%;
   display: none;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   z-index: 50;
   font-size: 2em;
   font-weight: 800;
 }
 
-.palette {
-  position: absolute;
-  bottom: -350px;
-  left: -150px;
-  border-radius: 50%;
-  width: 300px;
-  aspect-ratio: 1/1;
-}
-
-.palette-re {
-  position: absolute;
-  bottom: -500px;
-  left: -300px;
-  width: 600px;
-  aspect-ratio: 1/1;
-}
-
-.bg-button {
-  width: 25%;
-  height: 25%;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  cursor: pointer;
-}
-.bg-button:active {
-  width: 30%;
-  height: 30%;
-}
-
 .bg-palette-button {
   position: relative;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .bg-arrow {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   transform: rotateZ(-90deg);
   transition: 0.5s;
 }
@@ -455,13 +423,12 @@ header {
 
 .bg-palette {
   position: relative;
-  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-  height: 80px;
+  width: 100%;
   padding-left: 4px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -475,8 +442,8 @@ header {
 }
 
 .bg-picker {
-  width: 60px;
-  height: 60px;
+  width: 15%;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 4px;

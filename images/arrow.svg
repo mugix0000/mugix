@@ -2,6 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(5.0186e-17,-0.8196,1.16365,7.1253e-17,23.273,221.911)">
-        <path d="M173.907,108.382L173.907,151.873L26.734,65.937L173.907,-20L173.907,23.491L270.756,23.491L270.756,108.382L173.907,108.382Z" style="fill:rgb(235,94,48);"/>
+        <path d="M171.972,108.314L171.422,148.724C118.27,121.301 71.474,92.669 31.337,62.769C79.191,34.58 126.134,8.219 172.4,-16.784L174.711,20.773L265.416,21.077L265.727,108.126L171.972,108.314Z" style="fill:rgb(235,94,48);"/>
     </g>
 </svg>

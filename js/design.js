@@ -74,7 +74,7 @@ $(function(){
       omikuji = "凶(x_x)";
     }
     $(".mugi-selif").text(omikuji);
-    $(".mugi-selif").css("display", "block");
+    $(".mugi-selif").css("display", "flex");
   });
 });
 //背景パレット
