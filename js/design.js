@@ -1,11 +1,10 @@
 //メニューボタン
 var menuIsOpen = false;
 $(function () {
-    $("#js-hamburger-menu, .navigation-link").on("click", function () {
+    $("#js-hamburger-menu, .navigation-click").on("click", function () {
       $(".navigation").toggle();
       $(".hamburger-menu").toggleClass("hamburger-menu-open");
-      if ($("header").hasClass("header-color-open")) {
-        $(".header-color").removeClass("header-color-open");
+      if (menuIsOpen == true) {
         $(".rope").css("z-index", "20");
         $("body").css("overflow", "");
         if ($(window).scrollTop() < 150) {
@@ -13,7 +12,7 @@ $(function () {
         }
         menuIsOpen = false;
       } else {
-        $(".header-color").addClass("header-color-open");
+        console.log("open");
         $(".rope").css("z-index", "100");
         $("body").css("overflow", "hidden");
         $(".scroll-down").css("display", "none");

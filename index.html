@@ -25,9 +25,9 @@
 <body class="media">
   <div style="position: absolute; top: 0;" id="top"></div>
   <div class="bg"></div>
-  <!-- header -->
-  <header class="header-color">
-    <div class="logo">MUGIX DESIGN</div>
+<!-- header -->
+  <header>
+    <a href="index.html" style="text-decoration: none; color: inherit; z-index: 100;"><div class="logo">MUGIX DESIGN</div></a>
     <button class="hamburger-menu" id="js-hamburger-menu">
       <span class="hamburger-menu_bar"></span>
       <span class="hamburger-menu_bar"></span>
@@ -35,20 +35,33 @@
     </button>
     <nav class="navigation">
       <div class="navi-container">
-        <div class="area-horizon" style="height: 20%;">
-          <img src="images/mugi-3.svg" class="shake" style="height: 100%; margin-left: 5%;">
-          <img src="images/hello.svg" style="height: 50%; transform: rotateZ(-10deg); margin-left: -8%;">
+        <div class="area-horizon" style="height: 25%;">
+          <img src="images/mugi-3.svg" class="shake" style="width: 50%;">
+          <div class="main-menu">
+            <a href="#top" class="navigation-click" style="display: block;">top</a>
+            <a href="#about" class="navigation-click" style="display: block;">about us</a>
+            <a href="#workflow" class="navigation-click" style="display: block;">workflow</a>
+            <a href="#prices" class="navigation-click" style="display: block;">menu</a>
+          </div>
         </div>
         <ul class="navigation-list" style="border-bottom: 2px solid #48575e;">
-          <li><a href="#top" class="navigation-link" style="color: inherit; background-color: inherit;">Top</a></li>
-          <li><a href="#about" class="navigation-link" style="color: inherit; background-color: inherit;">About us ------ムギックスについて</a></li>
-          <li><a href="#workflow" class="navigation-link" style="color: inherit; background-color: inherit;">Workflow ------完成までの流れ</a></li>
-          <li><a href="#prices" class="navigation-link" style="color: inherit; background-color: inherit;">Menu ------料金プラン</a></li>
+          <div style="font-size: 24px; font-weight: bold;">WORKS</div>
+          <a href="menu_studio.html"><div style="margin-left: 12px;">STUDIOで作るホームページ 3プラン</div></a>
+          <li><a href="menu_studio.html#standard" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+            スタンダード ¥30,000</a></li>
+          <li><a href="menu_studio.html#cms" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+            CMS ¥50,000</a></li>
+          <li><a href="menu_studio.html#original" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+            オリジナル ¥80,000</a></li>
+          <a href="menu_custom.html"><div style="margin-left: 12px;">1から作る完全オリジナルホームページ</div></a>
+          <li><a href="menu_custom.html" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+            カスタム ¥100,000</a></li>
         </ul>
         <div style="height: 20%; border-bottom: 2px solid #48575e;">
+          <div style="font-size: 24px; font-weight: bold;">OTHERS</div>
         </div>
         <ul class="navigation-list">
-          <li><a href="#contact" class="navigation-link">お問い合わせはこちらから</a></li>
+          <li><a href="#contact" class="navigation-link navigation-click">お問い合わせはこちらから</a></li>
           <li><a href="privacy_policy.html" class="navigation-link">プライバシーポリシー</a></li>
         </ul>
       </div>
@@ -60,28 +73,39 @@
   <!-- side-menu -->
   <div class="side-menu is-disappear">
     <div class="navi-container">
-      <div class="area-horizon" style="height: 20%;">
-        <img src="images/mugi-3.svg" class="shake" style="height: 100%; margin-left: 5%;">
-        <img src="images/hello.svg" style="height: 50%; transform: rotateZ(-10deg); margin-left: -8%;">
+      <div class="area-horizon" style="height: 25%;">
+        <img src="images/mugi-3.svg" class="shake" style="width: 50%;">
+        <div class="main-menu">
+          <a href="#top" style="display: block;">top</a>
+          <a href="#about" style="display: block;">about us</a>
+          <a href="#workflow" style="display: block;">workflow</a>
+          <a href="#prices" style="display: block;">menu</a>
+        </div>
       </div>
       <ul class="navigation-list" style="border-bottom: 2px solid #48575e;">
-        <li><a href="#top" class="side-navigation-link" style="color: inherit; background-color: inherit;">Top</a></li>
-        <li><a href="#about" class="side-navigation-link" style="color: inherit; background-color: inherit;">About us ------ムギックスについて</a></li>
-        <li><a href="#workflow" class="side-navigation-link" style="color: inherit; background-color: inherit;">Workflow ------完成までの流れ</a></li>
-        <li><a href="#prices" class="side-navigation-link" style="color: inherit; background-color: inherit;">Menu ------料金プラン</a></li>
-        <li><a href="#contact" class="side-navigation-link" style="color: inherit; background-color: inherit;">Contact ------お問い合わせ</a></li>
+        <div style="font-size: 24px; font-weight: bold;">WORKS</div>
+        <a href="menu_studio.html"><div style="margin-left: 12px;">STUDIOで作るホームページ 3プラン</div></a>
+        <li><a href="menu_studio.html#standard" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+          スタンダード ¥30,000</a></li>
+        <li><a href="menu_studio.html#cms" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+          CMS ¥50,000</a></li>
+        <li><a href="menu_studio.html#original" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+          オリジナル ¥80,000</a></li>
+        <a href="menu_custom.html"><div style="margin-left: 12px;">1から作る完全オリジナルホームページ</div></a>
+        <li><a href="menu_custom.html" class="navigation-link" style="color: inherit; background-color: #84fff9;">
+          カスタム ¥100,000</a></li>
       </ul>
-      <div style="height: 20%; border-bottom: 2px solid #48575e;">
-      
+    <div style="height: 20%; border-bottom: 2px solid #48575e;">
+        <div style="font-size: 24px; font-weight: bold;">OTHERS</div>
       </div>
       <ul class="navigation-list">
-        <li><a href="#contact" class="side-navigation-link">お問い合わせはこちらから</a></li>
+        <li><a href="#contact" class="navigation-link">お問い合わせはこちらから</a></li>
         <li><a href="privacy_policy.html" class="navigation-link">プライバシーポリシー</a></li>
       </ul>
     </div>
-  </div>
+</div>
   <div class="container media-container">
-    <!-- climber -->
+<!-- climber -->
     <div class="rope">
       <div class="climber-frame">
         <div class="climber">
@@ -90,7 +114,7 @@
         </div>
       </div>
     </div>
-    <!-- main -->
+<!-- main -->
     <div class="area-top">
     </div>
     <div class="area" id="background-color-on">
@@ -317,7 +341,9 @@
     </div>
     <div class="area" style="margin-bottom: 48px;">
       <div class="text-hor inview fade-in-bottom" style="margin: 0 25% 0 4%; line-height: 2;">
-        基本のプランはシンプルに３種類です<br>
+        基本のプランは大きく分けて2つです<br>
+        ・ノーコードツールSTUDIOを使うプラン<br>
+        ・1からコードを書いて作るプラン<br>
         詳しい内容はメニューをタッチして詳細をご覧ください<br>
       </div>
     </div>
@@ -325,29 +351,36 @@
       BASIC PLAN
     </div>
     <div class="plan-slider">
-      <a class="plan" href="menu_studio.html"><img src="images/studio-top.png" class="plan-image"></a>
       <div class="plan" style="background-color: beige;">
         <img src="images/mugi-3.svg" class="plan-top">
-        <div class="plan-title">STUDIOサイト</div>
-        <div class="plan-title">3プラン</div>
+        <div class="plan-title">STUDIOで作る</div>
+        <div class="plan-title">スタンダードサイト</div>
         <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
-          <a href="menu_studio.html"><div class="button">詳しくはこちら</div></a>
+          <a href="menu_studio.html#standard"><div class="button">詳しくはこちら</div></a>
         </div>
       </div>
-      <div class="plan">
+      <div class="plan" style="background-color: beige;">
+        <img src="images/mugi-3.svg" class="plan-top">
+        <div class="plan-title">STUDIOで作る</div>
+        <div class="plan-title">CMSサイト</div>
+        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
+          <a href="menu_studio.html#cms"><div class="button">詳しくはこちら</div></a>
+        </div>
+      </div>
+      <div class="plan" style="background-color: beige;">
+        <img src="images/mugi-3.svg" class="plan-top">
+        <div class="plan-title">STUDIOで作る</div>
+        <div class="plan-title">オリジナルサイト</div>
+        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
+          <a href="menu_studio.html#original"><div class="button">詳しくはこちら</div></a>
+        </div>
+      </div>
+      <div class="plan" style="background-color: beige;">
         <img src="images/anchan.svg" class="plan-top">
-        <div class="plan-title">テンプレートCMS</div>
-        <div class="plan-title">¥50,000</div>
+        <div class="plan-title">1から作る</div>
+        <div class="plan-title">完全オリジナルサイト</div>
         <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
-          <div data-modal="#plan-cms" class="button modal-open">詳しくはこちら</div>
-        </div>
-      </div>
-      <div class="plan">
-        <img src="images/goma.svg" class="plan-top">
-        <div class="plan-title">オリジナル</div>
-        <div class="plan-title">¥100,000〜</div>
-        <div style="text-align: center; margin-top: 8px; font-size: clamp(16px, 4vw, 32px);">
-          <div data-modal="#plan-original" class="button modal-open">詳しくはこちら</div>
+          <a href="menu_custom.html"><div class="button">詳しくはこちら</div></a>
         </div>
       </div>
     </div>
@@ -358,95 +391,92 @@
       <div class="option">
         <div class="option-title" style="margin-top: 30%;">小規模な更新</div>
         <div class="option-title">¥10,000</div>
-        <img src="images/button-plus.svg" class="button-plus">
+        <img src="images/button-plus.svg" class="button-plus modal-open" data-modal="#update-s">
       </div>
       <div class="option">
         <div class="option-title" style="margin-top: 30%;">大規模な更新</div>
         <div class="option-title">¥応相談</div>
-        <img src="images/button-plus.svg" class="button-plus">
+        <img src="images/button-plus.svg" class="button-plus modal-open" data-modal="#update-l">
       </div>
       <div class="option">
-        <div class="option-title" style="margin-top: 30%;">画像制作</div>
+        <div class="option-title" style="margin-top: 30%;">バナー画像制作</div>
         <div class="option-title">¥10,000</div>
-        <img src="images/button-plus.svg" class="button-plus">
+        <img src="images/button-plus.svg" class="button-plus modal-open" data-modal="#banner">
+      </div>
+      <div class="option">
+        <div class="option-title" style="margin-top: 30%;">イラスト制作</div>
+        <div class="option-title">¥10,000</div>
+        <img src="images/button-plus.svg" class="button-plus modal-open" data-modal="#illust">
+      </div>
+      <div class="option">
+        <div class="option-title" style="margin-top: 30%;">LINE公式<br>アカウント制作</div>
+        <div class="option-title">¥20,000</div>
+        <img src="images/button-plus.svg" class="button-plus modal-open" data-modal="#line">
       </div>
     </div>
-    <!-- modal -->
-    <div class="modal-frame" id="plan-simple">
+<!-- modal -->
+    <div class="modal-frame" id="update-s">
       <div class="modal-content">
         <img src="images/button-plus.svg" class="button-hide">
-        <h2>STUDIOで作るテンプレートサイト</h2>
+        <img src="images/anchan.svg" class="modal-image">
+        <h2 style="text-align: center; margin-top: 0;">小規模な更新</h2>
+        <h2 style="text-align: center; margin-top: 0;">¥10,000</h2>
         <div>
-          STUDIOのテンプレートを使用してホームページを制作しますので、低価格で非常にスピーディーです。<br>
-          スピーディではありますが、かなりの高品質なサイトを制作できます。<br>
+          制作したホームページの更新を行います<br>
+          文章の変更、追加、削除や画像の変更などコンテンツの編集を対象にします<br>
         </div>
-        <ul>
-          含まれるサービス
-          <li>STUDIOアカウント作成のお手伝い</li>
-          <li>サイト制作（５ページまで）</li>
-          <li>修正（２回）</li>
-          <li>独自ドメインの設定</li>
-          <li>完成後の更新等のレクチャー</li>
-        </ul>
-        <div>
-          ▪️注意点<br>
-          料金にはSTUDIOの使用でかかる費用は含まれていません。<br>
-          有料のテンプレートを使う際には、テンプレートの費用、STUDIOの利用を無料プランにしない場合月額980円、
-          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
-        </div>
-        <div style="margin-top: 8px;"><a href="https://cyan326691.studio.site" target="_blank" class="button">サンプルサイト</a></div>
       </div>
     </div>
-    <div class="modal-frame" id="plan-cms">
+    <div class="modal-frame" id="update-l">
       <div class="modal-content">
         <img src="images/button-plus.svg" class="button-hide">
-        <h2>STUDIOで作るCMSサイト</h2>
+        <img src="images/anchan.svg" class="modal-image">
+        <h2 style="text-align: center; margin-top: 0;">大規模な更新</h2>
+        <h2 style="text-align: center; margin-top: 0;">¥応相談</h2>
         <div>
-          CMSとは記事やニュース、画像の追加、差し替えなどが簡単にできるシステムです。<br>
-          更新方法などは、しっかりとご説明いたします。<br>
+          制作したホームページの大規模な更新を行います<br>
+          ページの追加やCMSの追加など、大幅な変更のため、ご相談にて承ります<br>
+          場合によっては作り直すほうが早いかも知れません<br>
         </div>
-        <ul>
-          含まれるサービス
-          <li>STUDIOアカウント作成のお手伝い</li>
-          <li>サイト制作（7ページまで）</li>
-          <li>修正（２回）</li>
-          <li>独自ドメインの設定</li>
-          <li>完成後の更新等のレクチャー</li>
-          <li>２週間のアフターサービス</li>
-        </ul>
-        <div>
-          ▪️注意点<br>
-          料金にはSTUDIOの使用でかかる費用は含まれていません。<br>
-          有料のテンプレートを使う際には、テンプレートの費用、STUDIOの利用を無料プランにしない場合月額2480円、
-          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
-        </div>
-        <div style="margin-top: 8px;"><a href="https://cyan326691.studio.site" target="_blank" class="button">サンプルサイト</a></div>
       </div>
     </div>
-    <div class="modal-frame" id="plan-original">
+    <div class="modal-frame" id="banner">
       <div class="modal-content">
         <img src="images/button-plus.svg" class="button-hide">
-        <h2>完全カスタムサイト</h2>
+        <img src="images/anchan.svg" class="modal-image">
+        <h2 style="text-align: center; margin-top: 0;">バナー画像制作</h2>
+        <h2 style="text-align: center; margin-top: 0;">¥10,000</h2>
         <div>
-          テンプレートを使用せず、一から作ります。<br>
-          デザインの要望なども可能な限りお応えします。当サイトのように動きの豊富な要素もOKです。<br>
-        </div>
-        <ul>
-          含まれるサービス
-          <li>サイト制作（7ページまで）</li>
-          <li>修正（5回）</li>
-          <li>サーバーへのデプロイ</li>
-          <li>独自ドメインの設定</li>
-          <li>完成後の更新等のレクチャー</li>
-        </ul>
-        <div>
-          ▪️注意点<br>
-          料金にはサーバーの使用量は含まれていません。どのサーバーを使うかは打ち合わせで決めましょう、無料のサーバーもあります。<br>
-          独自のドメインを使用する場合はドメインの費用（年額1500円前後）が別途かかります。
+          ホームページで使う画像は基本的にはご用意いただくか、画像素材から使用しますが<br>
+          オリジナルのバナー画像が必要であればデザイン致します<br>
         </div>
       </div>
     </div>
-    <!-- contact -->
+    <div class="modal-frame" id="illust">
+      <div class="modal-content">
+        <img src="images/button-plus.svg" class="button-hide">
+        <img src="images/anchan.svg" class="modal-image">
+        <h2 style="text-align: center; margin-top: 0;">イラスト制作</h2>
+        <h2 style="text-align: center; margin-top: 0;">¥10,000</h2>
+        <div>
+          ロゴやキャラクターなどイラスト制作も行っています<br>
+          ポップなデザインが得意です！<br>
+        </div>
+      </div>
+    </div>
+    <div class="modal-frame" id="line">
+      <div class="modal-content">
+        <img src="images/button-plus.svg" class="button-hide">
+        <img src="images/anchan.svg" class="modal-image">
+        <h2 style="text-align: center; margin-top: 0;">LINE公式アカウント制作</h2>
+        <h2 style="text-align: center; margin-top: 0;">¥20,000</h2>
+        <div>
+          LINE公式アカウントを制作代行します<br>
+          アカウント作成からリッチメニューのデザイン、応答メッセージ等の設定まですぐに使える状態まで制作します<br>
+        </div>
+      </div>
+    </div>
+<!-- contact -->
     <div id="contact" class="area" style="margin-bottom: 24px; margin-top: -64px; padding-top: 64px;">
       <img src="images/contact2.svg" class="inview-appear is-disappear subtitle" style="width: 80%; margin: 0 auto; display: block;">
       <img src="images/goma.svg" class="inview-appear is-disappear shake" style="width: 40%; position: absolute; bottom: 0; left: -10%;">
