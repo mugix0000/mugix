@@ -37,6 +37,14 @@ $(function(){
     }
   });
 });
+//フリップ
+$(function(){
+  $(".inview-flip").on("inview", function (event, isInView) {
+    if (isInView) {
+      $(this).stop().addClass("is-flip");
+    }
+  });
+});
 //個別のInview
 $(function(){
   $("#title").on("inview", function (event, isInView) {
