@@ -261,7 +261,7 @@ header {
     margin: 4px 0;
     background-color: $primary-color;
     border-radius: 24px;
-    padding: 3px 8px 2px 16px;
+    padding:6px 8px 2px 16px;
 }
 .navigation-button {
     display: block;
@@ -269,9 +269,14 @@ header {
     font-family: "Luckiest Guy";
     color: white;
     letter-spacing: 2px;
+    margin: 4px 0;
+    background-color: $primary-color;
+    border-radius: 24px;
+    padding:6px 8px 2px 16px;
 }
 .navigation-sub {
-    margin: 0;
+    margin: 0 0 0 20px;
+    
 }
 .navigation-link {
     color: white;
