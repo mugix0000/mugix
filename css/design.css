@@ -15,7 +15,7 @@ a {
 }
 
 .media-border {
-  border: 2px solid rgb(60, 60, 60);
+  border: 2px solid #3c3c3c;
 }
 
 .media-container {
@@ -27,7 +27,7 @@ a {
     font-size: 18px;
   }
   .media-border {
-    border: 3px solid rgb(60, 60, 60);
+    border: 3px solid #3c3c3c;
   }
   .media-container {
     margin: 0 auto;
@@ -38,7 +38,7 @@ a {
     font-size: 20px;
   }
   .media-border {
-    border: 4px solid rgb(60, 60, 60);
+    border: 4px solid #3c3c3c;
   }
   .media-container {
     margin: 0 5% 0 auto;
@@ -54,8 +54,8 @@ p {
 }
 
 body {
-  color: rgb(60, 60, 60);
-  font-family: "Avenir Next", "M PLUS 1p", "Hiragino Sans", sans-serif;
+  color: #3c3c3c;
+  font-family: "M PLUS 1p", "Hiragino Sans", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   transition: 2s;
@@ -151,7 +151,7 @@ section {
     background-position: -240px 0;
   }
 }
-.scroll-down {
+.climber-selif {
   display: none;
   position: absolute;
   top: -100px;
@@ -200,6 +200,7 @@ header {
 }
 
 .logo {
+  font-family: "Luckiest Guy";
   font-weight: 900;
   font-size: 24px;
   padding-left: 16px;
@@ -231,7 +232,7 @@ header {
   display: inline-block;
   width: 50%;
   height: 3px;
-  background: rgb(60, 60, 60);
+  background: #3c3c3c;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -289,11 +290,22 @@ header {
 }
 
 .navigation-list {
-  font-size: 16px;
-  list-style: none;
-  padding: 0 0 0 0;
+  margin: 4px 0;
+  background-color: #eb5e30;
+  border-radius: 24px;
+  padding: 3px 8px 2px 16px;
+}
+
+.navigation-button {
+  display: block;
+  font-size: 1em;
+  font-family: "Luckiest Guy";
+  color: white;
+  letter-spacing: 2px;
+}
+
+.navigation-sub {
   margin: 0;
-  line-height: 1.2;
 }
 
 .navigation-link {
@@ -549,7 +561,7 @@ header {
   margin-bottom: 8px;
   text-align: center;
   background-color: #fbcb7b;
-  border-top: 3px solid rgb(60, 60, 60);
+  border-top: 3px solid #3c3c3c;
 }
 
 footer {

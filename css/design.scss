@@ -4,7 +4,7 @@ $bg-color: #84fff9;
 $primary-color: #eb5e30;
 $secondary-color: #fbcb7b;
 $tertialy-color: rgb(117, 42, 7);
-$font-color: rgb(60, 60, 60);
+$font-color: #3c3c3c;
 $font-color2: #48575e;
 $font-subcolor: green;
 
@@ -56,7 +56,7 @@ p {
 }
 body {
     color: $font-color;
-    font-family: 'Avenir Next', "M PLUS 1p", 'Hiragino Sans', sans-serif;
+    font-family: "M PLUS 1p", 'Hiragino Sans', sans-serif;
     font-weight: 500;
     line-height: 1.5;
     transition: 2s;
@@ -139,7 +139,7 @@ section {
     0% { background-position: 0 0; }
     100% { background-position: -240px 0; }
 }
-.scroll-down {
+.climber-selif {
     display: none;
     position: absolute;
     top: -100px;
@@ -182,6 +182,7 @@ header {
     background-color: $secondary-color;
 }
 .logo {
+    font-family: "Luckiest Guy";
     font-weight: 900;
     font-size: 24px;
     padding-left: 16px;
@@ -257,11 +258,20 @@ header {
     flex-direction: column;
 }
 .navigation-list {
-    font-size: 16px;
-    list-style: none;
-    padding: 0 0 0 0;
+    margin: 4px 0;
+    background-color: $primary-color;
+    border-radius: 24px;
+    padding: 3px 8px 2px 16px;
+}
+.navigation-button {
+    display: block;
+    font-size: 1em;
+    font-family: "Luckiest Guy";
+    color: white;
+    letter-spacing: 2px;
+}
+.navigation-sub {
     margin: 0;
-    line-height: 1.2;
 }
 .navigation-link {
     color: white;

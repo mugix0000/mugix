@@ -11,6 +11,7 @@ $(function () {
           $(".scroll-down").css("display", "block");
         }
         menuIsOpen = false;
+        $("#menu-selif").css("display", "none");
       } else {
         console.log("open");
         $(".rope").css("z-index", "100");
@@ -18,6 +19,7 @@ $(function () {
         $(".scroll-down").css("display", "none");
         $(".scroll-top").css("display", "none");
         menuIsOpen = true;
+        $("#menu-selif").css("display", "block");
       }
     });
 });
@@ -121,7 +123,7 @@ var id = false;
 $(window).on("scroll", function(){
   if (!isScrolling) {
     $(".climber").css("animation", "climbing 0.3s steps(2) infinite");
-    $(".scroll-down").css("display", "none");
+    $("#scroll-down").css("display", "none");
     isScrolling = true;
   }
   if(id) clearTimeout(id);
@@ -130,18 +132,18 @@ $(window).on("scroll", function(){
     if ($(window).scrollTop() < 150){
       $(".climber").css("background-position", "-240px 0");
       if(!menuIsOpen){
-        $(".scroll-down").css("display", "block");
+        $("#scroll-down").css("display", "block");
       }
       $(".scroll-top").css("display", "none");
     }else if($(window).scrollTop() + $(window).height() > $(document).height() - 40) {
       $(".climber").css("background-position", "-480px 0");
-      $(".scroll-down").css("display", "none");
+      $("#scroll-down").css("display", "none");
       if(!menuIsOpen){
         $(".scroll-top").css("display", "block");
       }
     }else {
       $(".climber").css("background-position", "-360px 0");
-      $(".scroll-down").css("display", "none");
+      $("#scroll-down").css("display", "none");
       $(".scroll-top").css("display", "none");
     }
     isScrolling = false;

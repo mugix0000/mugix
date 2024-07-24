@@ -16,7 +16,10 @@
   <link rel="icon" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" type="image/png" href="images/android-touch-icon.png" sizes="192x192">
+  <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap">
+  <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <link rel="stylesheet" type="text/css" href="css/design.css">
@@ -36,35 +39,35 @@
     </button>
     <nav class="navigation">
       <div class="navi-container">
-        <div class="area-horizon" style="height: 25%;">
-          <img src="images/mugi-3.svg" class="shake" style="width: 50%;">
-          <div class="main-menu">
-            <a href="#top" class="navigation-click" style="display: block;">top</a>
-            <a href="#about" class="navigation-click" style="display: block;">about us</a>
-            <a href="#workflow" class="navigation-click" style="display: block;">workflow</a>
-            <a href="#prices" class="navigation-click" style="display: block;">menu</a>
+        <div style="height: 50%;">
+          <div class="navigation-list">
+            <a href="#about" class="navigation-button navigation-click">ABOUT US</a>
+          </div>
+          <div class="navigation-list">
+            <a href="#contact" class="navigation-button navigation-click">CONTACT</a>
+          </div>
+          <div class="navigation-list" style="background-color: transparent; margin: 0;">
+            <p class="navigation-button navigation-click" style="color: #3c3c3c;">WORK</p>
+          </div>
+          <div class="navigation-list">
+            <a href="#work-1" class="navigation-button navigation-click" style="line-height: 1.1;">WEBSITE</a>
+            <p class="navigation-sub">ウェブサイト制作</p>
+          </div>
+          <div class="navigation-list">
+            <a href="#work-2" class="navigation-button navigation-click" style="line-height: 1.1;">GONNA</a>
+            <p class="navigation-sub">予約アプリケーション</p>
+          </div>
+          <div class="navigation-list">
+            <a href="#work-3" class="navigation-button navigation-click" style="line-height: 1.1;">GAMES</a>
+            <p class="navigation-sub">工事中です</p>
           </div>
         </div>
-        <ul class="navigation-list" style="border-bottom: 2px solid #48575e;">
-          <div style="font-size: 24px; font-weight: bold;">WORKS</div>
-          <a href="menu_studio.html"><div>STUDIOで作るホームページ 3プラン</div></a>
-          <li><a href="menu_studio.html#standard" class="navigation-link" style="color: inherit; background-color: #84fff9;">
-            スタンダード ¥30,000</a></li>
-          <li><a href="menu_studio.html#cms" class="navigation-link" style="color: inherit; background-color: #84fff9;">
-            CMS ¥50,000</a></li>
-          <li><a href="menu_studio.html#original" class="navigation-link" style="color: inherit; background-color: #84fff9;">
-            オリジナル ¥80,000</a></li>
-          <a href="menu_custom.html"><div>1から作る完全オリジナルホームページ</div></a>
-          <li><a href="menu_custom.html" class="navigation-link" style="color: inherit; background-color: #84fff9;">
-            カスタム ¥100,000</a></li>
-        </ul>
-        <div style="height: 20%; border-bottom: 2px solid #48575e;">
-          <div style="font-size: 24px; font-weight: bold;">OTHERS</div>
+        <div style="height: 30%;"></div>
+        <div style="height: 20%;">
+          <div class="navigation-list">
+            <a href="privacy_policy.html" class="navigation-button navigation-click">プライバシーポリシー</a>
+          </div>
         </div>
-        <ul class="navigation-list">
-          <li><a href="#contact" class="navigation-link navigation-click">お問い合わせはこちらから</a></li>
-          <li><a href="privacy_policy.html" class="navigation-link">プライバシーポリシー</a></li>
-        </ul>
       </div>
     </nav>
   </header>
@@ -110,7 +113,8 @@
     <div class="rope">
       <div class="climber-frame">
         <div class="climber">
-          <img src="images/scroll-down.svg" class="scroll-down">
+          <img src="images/scroll-down.svg" id="menu-selif" class="climber-selif">
+          <img src="images/scroll-down.svg" id="scroll-down" class="climber-selif">
           <a href="#top"><img src="images/scroll-top.svg" class="scroll-top"></a>
         </div>
       </div>
@@ -224,11 +228,11 @@
     <section id="work">
       <div class="head is-disappear inview-appear">
         <img src="images/shoebill.svg" style="position: absolute; bottom: 0; right: 20%; width: 15%;">
-        <img src="images/workflow3.svg" class="subtitle">
+        <img src="images/work.svg" class="subtitle">
         <h1 style="text-align: center;">〜制作〜</h1>
       </div>
 <!-- 1 -->
-      <div class="area" style="margin-bottom: 100px;">
+      <div id="work-1" class="area" style="margin-bottom: 100px;">
         <div class="work-number inview-flip">1</div>
         <h2 class="menu-title inview fade-in-bottom">
           ウェブサイト制作
