@@ -309,46 +309,7 @@ header {
 }
 
 .navigation-sub {
-  margin: 0 0 0 20px;
-}
-
-.navigation-link {
-  color: white;
-  text-decoration: none;
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #eb5e30;
-  border-radius: 24px;
-  padding: 4px 8px;
-  margin: 8px 0 8px 8px;
-}
-
-.side-navigation-link {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 8px 0;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #eb5e30;
-  border-radius: 24px;
-  padding: 4px 8px;
-  margin-bottom: 6px;
-}
-
-.main-menu {
-  background-image: url("../images/selif.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 250px;
-  margin-left: -8%;
-  z-index: 110;
-  text-align: center;
-  color: #eb5e30;
-  padding-top: 20px;
-  font-size: 18px;
+  margin: 0 0 0 30px;
 }
 
 /* メイン ------------------------------ */
@@ -528,17 +489,10 @@ header {
 }
 
 .work-number {
-  background-color: #eb5e30;
-  color: white;
-  border-radius: 50%;
   width: 100px;
   height: 100px;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
   margin: 0 auto 20px auto;
+  display: block;
 }
 
 .menu-title {
@@ -558,16 +512,6 @@ header {
   margin: 20px auto;
 }
 
-.area-footer {
-  width: 100%;
-  padding: 40px 0 60px 0;
-  position: relative;
-  margin-bottom: 8px;
-  text-align: center;
-  background-color: #fbcb7b;
-  border-top: 3px solid #3c3c3c;
-}
-
 footer {
   background-color: grey;
   padding: 40px 0 60px 0;
@@ -576,6 +520,40 @@ footer {
   text-align: center;
   z-index: 0;
   color: white;
+}
+
+/* privacy_policy -------------------------- */
+.mugi {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-color: #eb5e30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.return {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #fbcb7b;
+  border-radius: 24px;
+  cursor: pointer;
+  z-index: 100;
+  padding: 4px 8px;
+}
+
+.sentense {
+  margin-bottom: 24px;
+  line-height: 2;
+}
+
+.left-frame {
+  border-left: 10px solid #eb5e30;
+  padding-left: 12px;
+  font-size: 1.5em;
 }
 
 /* jquery ---------------------------------- */

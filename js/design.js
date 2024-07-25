@@ -8,7 +8,7 @@ $(function () {
         $(".rope").css("z-index", "20");
         $("body").css("overflow", "");
         if ($(window).scrollTop() < 150) {
-          $(".scroll-down").css("display", "block");
+          $("#scroll-down").css("display", "block");
         }
         menuIsOpen = false;
         $("#menu-selif").css("display", "none");
@@ -20,6 +20,7 @@ $(function () {
         $(".scroll-top").css("display", "none");
         menuIsOpen = true;
         $("#menu-selif").css("display", "block");
+        $("#scroll-down").css("display", "none");
       }
     });
 });
@@ -133,18 +134,20 @@ $(window).on("scroll", function(){
       $(".climber").css("background-position", "-240px 0");
       if(!menuIsOpen){
         $("#scroll-down").css("display", "block");
+      }else{
+        $("#scroll-down").css("display", "none");
       }
-      $(".scroll-top").css("display", "none");
+      $("#scroll-top").css("display", "none");
     }else if($(window).scrollTop() + $(window).height() > $(document).height() - 40) {
       $(".climber").css("background-position", "-480px 0");
       $("#scroll-down").css("display", "none");
       if(!menuIsOpen){
-        $(".scroll-top").css("display", "block");
+        $("#scroll-top").css("display", "block");
       }
     }else {
       $(".climber").css("background-position", "-360px 0");
       $("#scroll-down").css("display", "none");
-      $(".scroll-top").css("display", "none");
+      $("#scroll-top").css("display", "none");
     }
     isScrolling = false;
   }, 500);
@@ -222,22 +225,13 @@ $(function(){
     judge();
   });
 });
-//スライダー
+//戻るボタン
 $(function(){
-  $(".plan-slider").slick({
-    autoplay: true,
-    arrows: false,
-    centerMode: true,
-    centerPadding: "10%",
+  $(".return").on("click", function(){
+    if(window.history.length > 1) {
+      window.history.back();
+    }else{
+      window.location.href = "https://www.mugix.net";
+    }
   });
 })
-$(function(){
-  $(".option-slider").slick({
-    autoplay: true,
-    arrows: false,
-    slidesToShow: 2,
-    centerMode: true,
-    centerPadding: "10%",
-  });
-})
-
